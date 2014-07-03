@@ -1,0 +1,39 @@
+.top-bar {
+	border-bottom: 3px solid $hard-blue;
+	box-shadow: inset 0 0 4px rgba(255,255,255,.22);
+	@include background-image(linear-gradient(bottom, rgba(0,0,0,.13) 0%, rgba(255,255,255,.13) 100%));
+	
+	a {
+		text-transform: uppercase !important;
+		letter-spacing: 1px;
+	}
+
+	.row {
+		max-width: rem-calc(1280);
+	}
+}
+
+#header {
+	padding-top: rem-calc(20);
+	padding-bottom: rem-calc(20);
+	border-bottom: 1px solid #eaeaea;
+}
+
+.ads-top {
+	margin-top: rem-calc(21);
+}
+
+//Menu mobile
+.left-off-canvas-toggle, .right-off-canvas-toggle {
+	color: white;
+	padding: 0 rem-calc(20);
+}
+
+ul.off-canvas-list li a, ul.off-canvas-list li label {
+	font-size: rem-calc(20);
+	letter-spacing: 1px;
+}
+
+ul.off-canvas-list li a {
+	color: #fff;
+}

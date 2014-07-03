@@ -1,0 +1,11 @@
+@media #{$small-only} {
+	.icon-logo-small {
+		margin: 0 auto;
+	}
+}
+
+@media #{$medium-only} {
+	.icon-logo {
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,12 @@
+.icon-logo-small {
+  background-image: url(images/spritesheet.png);
+  background-position: 0px -132px;
+  width: 200px;
+  height: 88px;
+}
+.icon-logo {
+  background-image: url(images/spritesheet.png);
+  background-position: 0px 0px;
+  width: 300px;
+  height: 132px;
+}
