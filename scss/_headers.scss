@@ -11,6 +11,10 @@
 	.row {
 		max-width: rem-calc(1280);
 	}
+
+	.dropdown {
+		min-width: rem-calc(200);
+	}
 }
 
 #header {
@@ -36,4 +40,24 @@ ul.off-canvas-list li a, ul.off-canvas-list li label {
 
 ul.off-canvas-list li a {
 	color: #fff;
+}
+
+//Busca
+.form-search {
+	input {
+		border-radius: 10px 0 0 10px;
+		background-color: #eaeaea;
+	}
+
+	button {
+		@include button($bg: #ccc);
+		border-radius: 0 10px 10px 0;
+		color: white;
+		display: table;
+
+		span {
+			line-height: 0.4;
+			display: table-cell;
+		}
+	}
 }

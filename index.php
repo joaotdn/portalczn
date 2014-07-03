@@ -85,6 +85,28 @@
       </div><!-- //row -->
     </section><!-- //header -->
 
+    <section class="wrapper small-16">
+      <div class="row">
+        <form action="" class="small-16 columns form-search">
+          <div class="row collapse">
+            <div class="small-13 medium-14 large-15 columns">
+              <input type="text" placeholder="Buscar no site...">
+            </div>
+
+            <div class="small-3 medium-2 large-1 columns">
+              <button type="submit" class="postfix"><span class="icon-search"></span></button>
+            </div>
+          </div>
+        </form><!-- //form-search -->
+
+        <div class="small-12 left the-content">
+          <section class="small-9 columns home-slide">
+            
+          </section><!--//home-slide -->
+        </div><!-- //the-content -->
+      </div><!-- //row -->
+    </section><!-- //wrapper -->
+
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="scripts.js"></script>
   </body>
