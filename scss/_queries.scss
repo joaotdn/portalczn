@@ -9,3 +9,11 @@
 		margin: 0 auto;
 	}
 }
+
+@media #{$large-up} {
+	.row {
+		width: rem-calc(1280) !important;
+		min-width: rem-calc(1280) !important;
+		max-width: rem-calc(1280) !important;
+	}
+}

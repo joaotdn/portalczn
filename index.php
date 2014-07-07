@@ -60,10 +60,10 @@
           </ul>
 
           <ul class="right">
-            <li><a href="#" title="Seguir no Facebook" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-bottom radius round"><span class="icon-facebook3"></span></a></li>
-            <li><a href="#" title="Seguir no Twitter" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-bottom radius round"><span class="icon-twitter"></span></a></li>
-            <li><a href="#" title="Anunciar no site" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-bottom radius round"><span class="icon-megaphone"></span></a></li>
-            <li><a href="#" title="Contato" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-bottom radius round"><span class="icon-mail"></span></a></li>
+            <li><a href="#" title="Seguir no Facebook" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-bottom radius"><span class="icon-facebook3"></span></a></li>
+            <li><a href="#" title="Seguir no Twitter" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-bottom radius"><span class="icon-twitter"></span></a></li>
+            <li><a href="#" title="Anunciar no site" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-bottom radius"><span class="icon-megaphone"></span></a></li>
+            <li><a href="#" title="Contato" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-bottom radius"><span class="icon-mail"></span></a></li>
           </ul>
         </nav>
 
@@ -100,8 +100,49 @@
         </form><!-- //form-search -->
 
         <div class="small-12 left the-content">
-          <section class="small-9 columns home-slide">
-            
+          <section class="small-10 left home-slide">
+            <nav class="slide-thumbs small-3 columns">
+              <ul class="no-bullet">
+                <li>
+                  <a href="#" class="active"><img src="media/tsl1.jpg" alt=""></a>
+                </li>
+
+                <li>
+                  <a href="#"><img src="media/tsl2.jpg" alt=""></a>
+                </li>
+
+                <li>
+                  <a href="#"><img src="media/tsl3.jpg" alt=""></a>
+                </li>
+
+                <li>
+                  <a href="#"><img src="media/tsl4.jpg" alt=""></a>
+                </li>
+              </ul>
+            </nav>
+
+            <nav class="slide-content small-13 left rel">
+              <ul class="no-bullet">
+                <li>
+                  <figure>
+                    <a href="#" title="" class="trs slide-img">
+                      <img src="media/sl1.jpg" alt="">
+                    </a>
+
+                    <figcaption class="abs small-16 columns">
+                      <h5 class="small-16">
+                        <span class="left yellow">Policial</span>
+                        <span class="right">
+                          <a href="#" class="icon-comment white display-block has-tip tip-bottom radius" title="12 Comentários" data-tooltip data-options="disable_for_touch:true"></a>
+                        </span>
+                      </h5>
+
+                      <h3 class="small-16 left"><a href="#" title="" class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elitquae excepturi vel.</a></h3>
+                    </figcaption>
+                  </figure>
+                </li>
+              </ul>
+            </nav>
           </section><!--//home-slide -->
         </div><!-- //the-content -->
       </div><!-- //row -->

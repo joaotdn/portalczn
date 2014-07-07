@@ -4,3 +4,50 @@
 .home-slide {
 	height: rem-calc(405);
 }
+
+.slide-thumbs {
+	padding-right: 0;
+
+	a {
+		display: block;
+		text-align: center;
+		padding: rem-calc(13) 0;
+		border-radius: rem-calc(10) 0 0 rem-calc(10);
+		border: 1px solid $grey;
+		border-right: 0;
+
+		&.active {
+			background-color: $grey;
+		}
+	}
+
+	img {
+		width: rem-calc(70);
+	}
+}
+
+.slide-content {
+	height: rem-calc(392);
+	overflow: hidden;
+	background-color: $grey;
+
+	figcaption {
+		bottom: 0;
+		background: rgba($primary-color, 0.8);
+		transform: translateY(10px);
+	}
+
+	h5 {
+		margin-bottom: 0;
+		padding-top: rem-calc(5);
+	}
+
+	.icon-comment {
+		margin-top: rem-calc(5);
+	}
+}
+
+.slide-img {
+
+}
+

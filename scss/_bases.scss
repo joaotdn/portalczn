@@ -38,3 +38,15 @@ figure {
 	border-top: 1px solid #fff;
 	padding: rem-calc(20) 0;
 }
+
+.yellow {
+	color: #ffcc00;
+}
+
+.white {
+	color: #fff;
+}
+
+.trs {
+	@include transition;
+}
