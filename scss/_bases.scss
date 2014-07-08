@@ -4,6 +4,7 @@ figure {
 	margin: 0;
 }
 
+
 //Classes utilitárias
 //-----------------------------------------------------
 .rel {
@@ -47,6 +48,26 @@ figure {
 	color: #fff;
 }
 
+.red {
+	color: $secondary-color;
+}
+
 .trs {
 	@include transition;
+}
+
+.top-header {
+	line-height: 0.8;
+}
+
+.mbt {
+	margin-top: rem-calc(20);
+}
+
+/*
+	Classes exclusivas (módulos do template)
+ */
+.box-header {
+	border-bottom: 1px solid $secondary-color;
+	margin-bottom: rem-calc(20);
 }

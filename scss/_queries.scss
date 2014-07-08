@@ -2,11 +2,49 @@
 	.icon-logo-small {
 		margin: 0 auto;
 	}
+
+	/*
+	 	Slide destaques
+	 */.slide-img {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.slide-content {
+		height: auto;
+		figure {
+			max-height: rem-calc(300);
+		}
+	}
 }
 
 @media #{$medium-only} {
+	.row {
+		width: rem-calc(960) !important;
+		min-width: rem-calc(960) !important;
+		max-width: rem-calc(960) !important;
+	}
 	.icon-logo {
 		margin: 0 auto;
+	}
+
+	/*
+		Form search
+	 */
+	button.postfix {
+		width: 83% !important;
+	}
+
+	/*
+	 	Slide destaques
+	 */
+	.slide-img {
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
 }
 

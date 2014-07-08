@@ -93,18 +93,19 @@
               <input type="text" placeholder="Buscar no site...">
             </div>
 
-            <div class="small-3 medium-2 large-1 columns">
+            <div class="small-3 medium-2 large-1 columns end">
               <button type="submit" class="postfix"><span class="icon-search"></span></button>
             </div>
           </div>
         </form><!-- //form-search -->
 
-        <div class="small-12 left the-content">
-          <section class="small-10 left home-slide">
-            <nav class="slide-thumbs small-3 columns">
-              <ul class="no-bullet">
-                <li>
-                  <a href="#" class="active"><img src="media/tsl1.jpg" alt=""></a>
+        <div class="small-16 medium-16 large-12 left the-content">
+
+          <section class="small-16 medium-10 large-10 columns home-slide mbt">
+            <nav class="slide-thumbs small-3 left show-for-large-up">
+              <ul class="no-bullet pag-slide">
+                <li class="cycle-pager-active">
+                  <a href="#"><img src="media/tsl1.jpg" alt=""></a>
                 </li>
 
                 <li>
@@ -121,12 +122,86 @@
               </ul>
             </nav>
 
-            <nav class="slide-content small-13 left rel">
-              <ul class="no-bullet">
+            <nav class="slide-content small-16 large-13 left rel">
+              <div id="progress"></div>
+              <div class="nav-slides small-16 abs hide-for-large-up">
+                <a href="#" class="display-block prev-slide left"><span class="icon-arrow-left7"></span></a>  
+                <a href="#" class="display-block next-slide right"><span class="icon-uniE6D9"></span></a>  
+              </div>
+              <ul class="no-bullet cycle-slideshow"
+                data-cycle-pause-on-hover="true"
+                data-cycle-speed="500"
+                data-cycle-slides="> li"
+                data-cycle-timeout="8000"
+                data-cycle-pager=".pag-slide"
+                data-cycle-pager-template=""
+                data-cycle-pager-event="mouseover"
+                data-cycle-swipe="true"
+                data-cycle-swipe-fx="scrollHorz"
+                data-cycle-prev=".prev-slide"
+                data-cycle-next=".next-slide"
+              >
                 <li>
-                  <figure>
+                  <figure class="small-16 left">
                     <a href="#" title="" class="trs slide-img">
                       <img src="media/sl1.jpg" alt="">
+                    </a>
+
+                    <figcaption class="abs small-16 columns">
+                      <h5 class="small-16">
+                        <span class="left yellow">Policial</span>
+                        <span class="right">
+                          <a href="#" class="icon-comment white display-block has-tip tip-bottom radius" title="12 Comentários" data-tooltip data-options="disable_for_touch:true"></a>
+                        </span>
+                      </h5>
+
+                      <h3 class="small-16 left"><a href="#" title="" class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elitquae excepturi vel.</a></h3>
+                    </figcaption>
+                  </figure>
+                </li>
+
+                <li>
+                  <figure class="small-16 left">
+                    <a href="#" title="" class="trs slide-img">
+                      <img src="media/sl2.jpg" alt="">
+                    </a>
+
+                    <figcaption class="abs small-16 columns">
+                      <h5 class="small-16">
+                        <span class="left yellow">Policial</span>
+                        <span class="right">
+                          <a href="#" class="icon-comment white display-block has-tip tip-bottom radius" title="12 Comentários" data-tooltip data-options="disable_for_touch:true"></a>
+                        </span>
+                      </h5>
+
+                      <h3 class="small-16 left"><a href="#" title="" class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elitquae excepturi vel.</a></h3>
+                    </figcaption>
+                  </figure>
+                </li>
+
+                <li>
+                  <figure class="small-16 left">
+                    <a href="#" title="" class="trs slide-img">
+                      <img src="media/sl3.jpg" alt="">
+                    </a>
+
+                    <figcaption class="abs small-16 columns">
+                      <h5 class="small-16">
+                        <span class="left yellow">Policial</span>
+                        <span class="right">
+                          <a href="#" class="icon-comment white display-block has-tip tip-bottom radius" title="12 Comentários" data-tooltip data-options="disable_for_touch:true"></a>
+                        </span>
+                      </h5>
+
+                      <h3 class="small-16 left"><a href="#" title="" class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elitquae excepturi vel.</a></h3>
+                    </figcaption>
+                  </figure>
+                </li>
+
+                <li>
+                  <figure class="small-16 left">
+                    <a href="#" title="" class="trs slide-img">
+                      <img src="media/sl4.jpg" alt="">
                     </a>
 
                     <figcaption class="abs small-16 columns">
@@ -144,6 +219,20 @@
               </ul>
             </nav>
           </section><!--//home-slide -->
+
+          <section class="small-16 medium-6 large-6 columns last-news mbt">
+            <nav class="small-16 left nav-news">
+              <header class="small-16 left box-header">
+                <h4 class="text-up red top-header"><span class="icon-history"></span> Mais recentes</h4>
+              </header>
+              <ul class="no-bullet">
+                <li>
+                  
+                </li>
+              </ul>
+            </nav>
+          </section><!-- //Plantão -->
+
         </div><!-- //the-content -->
       </div><!-- //row -->
     </section><!-- //wrapper -->

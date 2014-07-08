@@ -2,13 +2,17 @@
 	Slide de destaques
  */
 .home-slide {
-	height: rem-calc(405);
+	height: auto;
 }
 
 .slide-thumbs {
 	padding-right: 0;
 
-	a {
+	img {
+		width: rem-calc(70);
+	}
+
+	li{
 		display: block;
 		text-align: center;
 		padding: rem-calc(13) 0;
@@ -16,13 +20,13 @@
 		border: 1px solid $grey;
 		border-right: 0;
 
-		&.active {
+		&.cycle-pager-active {
 			background-color: $grey;
 		}
-	}
 
-	img {
-		width: rem-calc(70);
+		&:hover {
+			background-color: $grey;
+		}
 	}
 }
 
@@ -31,10 +35,34 @@
 	overflow: hidden;
 	background-color: $grey;
 
+	li {
+		width: 100%;
+		float: left;
+	}
+
+	img {
+		@include transition(transform .3s linear);
+
+		&:hover {
+			@include _scale(1.05);
+		}
+	}
+
+	figure {
+		height: rem-calc(392);
+	}
+
 	figcaption {
 		bottom: 0;
 		background: rgba($primary-color, 0.8);
 		transform: translateY(10px);
+
+		@include transition(all .3s linear);
+
+		&:hover {
+			padding-top: rem-calc(10);
+			padding-bottom: rem-calc(10);
+		}
 	}
 
 	h5 {
@@ -48,6 +76,28 @@
 }
 
 .slide-img {
-
+	@extend .display-block;
+	img {
+		height: 100%;
+		width: auto;
+	}
 }
 
+#progress {
+	@extend .abs;
+	top: 0;
+	height: rem-calc(5);
+	width: 0px;
+	background: $secondary-color;
+	z-index: 500;
+}
+
+.nav-slides {
+	z-index: 991;
+	top: 40%;
+	a {
+		color: #fff;
+		padding: rem-calc(15);
+		background-color: $secondary-color;
+	}
+}

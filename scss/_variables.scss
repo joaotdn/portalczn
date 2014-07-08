@@ -1,3 +1,12 @@
 //Cores
 $hard-blue: #1f3b81;
 $grey: #e3e3e3;
+
+//Mixins
+@mixin _scale($n : 1.1) {
+	-webkit-transform: scale($n);
+	-moz-transform: scale($n);
+	-o-transform: scale($n);
+	-ms-transform: scale($n);
+	transform: scale($n);
+}
