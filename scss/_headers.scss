@@ -52,14 +52,13 @@ ul.off-canvas-list li a {
 	}
 
 	button {
-		@include button($bg: #ccc);
+		@include button($bg: #ccc, $padding: 0);
 		border-radius: 0 10px 10px 0;
 		color: white;
-		display: table;
 
 		span {
-			line-height: 0.4;
-			display: table-cell;
+			line-height: 1.4;
+			display: inline-block;
 		}
 	}
 }

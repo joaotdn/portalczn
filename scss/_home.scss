@@ -73,6 +73,12 @@
 	.icon-comment {
 		margin-top: rem-calc(5);
 	}
+
+	a {
+		&:hover {
+			color: $yellow;
+		}
+	}
 }
 
 .slide-img {
@@ -99,5 +105,22 @@
 		color: #fff;
 		padding: rem-calc(15);
 		background-color: $secondary-color;
+	}
+}
+
+/*
+	Ultimas noticias
+ */
+.bullets {
+	a {
+		display: inline-block;
+		padding: rem-calc(10);
+		background-color: $grey;
+		border-radius: 100%;
+		margin-right: rem-calc(10);
+
+		&.cycle-pager-active {
+			background-color: $secondary-color;
+		}
 	}
 }

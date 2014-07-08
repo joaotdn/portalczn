@@ -8,7 +8,7 @@ $(document).foundation();
  */
 
 var progress = $('#progress'),
-    slideshow = $( '.cycle-slideshow' );
+    slideshow = $( '.main-slideshow' );
 
 slideshow.on( 'cycle-initialized cycle-before', function( e, opts ) {
     progress.stop(true).css( 'width', 0 );
@@ -26,3 +26,16 @@ slideshow.on( 'cycle-paused', function( e, opts ) {
 slideshow.on( 'cycle-resumed', function( e, opts, timeoutRemaining ) {
     progress.animate({ width: '100%' }, timeoutRemaining, 'linear' );
 });
+
+/*
+	Config. menu off-canvas (Foundation)
+ */
+$(document)
+	.on('open.fndtn.offcanvas', '[data-offcanvas]', function() {
+  		$('.right-off-canvas-menu').css('display', 'block');
+  		$('.off-canvas-wrap').css('overflow','hidden');
+	})
+	.on('close.fndtn.offcanvas', '[data-offcanvas]', function() {
+  		$('.right-off-canvas-menu').css('display', 'none');
+  		$('.off-canvas-wrap').css('overflow','auto');
+	});

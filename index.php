@@ -86,17 +86,16 @@
     </section><!-- //header -->
 
     <section class="wrapper small-16">
+
       <div class="row">
         <form action="" class="small-16 columns form-search">
-          <div class="row collapse">
-            <div class="small-13 medium-14 large-15 columns">
+            <div class="small-13 medium-14 large-15 left">
               <input type="text" placeholder="Buscar no site...">
             </div>
 
-            <div class="small-3 medium-2 large-1 columns end">
-              <button type="submit" class="postfix"><span class="icon-search"></span></button>
+            <div class="small-3 medium-2 large-1 left end">
+              <button type="submit" class="postfix send-search"><span class="icon-search"></span></button>
             </div>
-          </div>
         </form><!-- //form-search -->
 
         <div class="small-16 medium-16 large-12 left the-content">
@@ -128,7 +127,7 @@
                 <a href="#" class="display-block prev-slide left"><span class="icon-arrow-left7"></span></a>  
                 <a href="#" class="display-block next-slide right"><span class="icon-uniE6D9"></span></a>  
               </div>
-              <ul class="no-bullet cycle-slideshow"
+              <ul class="no-bullet cycle-slideshow main-slideshow"
                 data-cycle-pause-on-hover="true"
                 data-cycle-speed="500"
                 data-cycle-slides="> li"
@@ -225,13 +224,111 @@
               <header class="small-16 left box-header">
                 <h4 class="text-up red top-header"><span class="icon-history"></span> Mais recentes</h4>
               </header>
-              <ul class="no-bullet">
-                <li>
-                  
+              
+              <ul class="no-bullet cycle-slideshow small-16 left"
+                data-cycle-fx="scrollHorz"
+                data-cycle-timeout="0"
+                data-cycle-slides="> li"
+                data-cycle-pager=".pag-news"
+                data-cycle-pager-template="<a href='#'></a>"
+              >
+                <li class="small-16 left">
+                  <small class="font-header tag red">Policial</small>
+                  <h3><a href="#" title="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, animi, possimusad.</a></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, dolore, ipsa eaque porro ea corporis sint optio quia rem...</p>
+                  <p class="font-header"><a href="#" title=""><span class="icon-comment hack-icon"></span> 9 comentários</a></p>
+                </li>
+
+                <li class="small-16 left">
+                  <small class="font-header tag red">Policial</small>
+                  <h3><a href="#" title="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, animi, possimusad.</a></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, dolore, ipsa eaque porro ea corporis sint optio quia rem...</p>
+                  <p class="font-header"><a href="#" title=""><span class="icon-comment hack-icon"></span> 9 comentários</a></p>
+                </li>
+
+                <li class="small-16 left">
+                  <small class="font-header tag red">Policial</small>
+                  <h3><a href="#" title="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, animi, possimusad.</a></h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, dolore, ipsa eaque porro ea corporis sint optio quia rem...</p>
+                  <p class="font-header"><a href="#" title=""><span class="icon-comment hack-icon"></span> 9 comentários</a></p>
                 </li>
               </ul>
+
+              <div class="pag-news bullets small-16 left text-center">
+              </div>
             </nav>
           </section><!-- //Plantão -->
+          
+          <div class="hl small-16 show-for-medium-up"></div><!-- //hl -->
+
+          <figure class="small-16 columns ads text-center show-for-medium-up">
+            <a href="#">
+              <img src="media/ads2.jpg" alt="">
+            </a>
+          </figure><!-- //ads -->
+
+          <div class="hl small-16 mbt"></div><!-- //hl -->
+          
+          <section class="box-container small-16 left mbt">
+            <div class="small-16 columns">
+              <header class="box-header small-16 left">
+                <h3><a href="#" title="" class="red text-up"><span class="icon-folder"></span> Política</a></h3>
+              </header>
+            </div>
+
+            <div class="small-16 medium-8 large-8 columns box-td">
+              <figure class="small-5 medium-7 large-7 left th">
+                <a href="#" title=""><img src="media/news1.jpg" alt=""></a>
+              </figure>
+
+              <article class="small-11 medium-9 large-9 left ads-in-left">
+                <small class="font-header red tag">Bate-boca</small>
+                <h4><a href="#" title="">Necessitatibus, repellendus, maxime, et ab deserunt at eum sit ex alias dolor rem natus ipsam</a></h4>
+                <p><a href="#" title="" class="color-body font-header"><span class="icon-comment hack-icon"></span> 3 comentários</a></p>
+              </article>
+            </div>
+
+            <div class="small-16 medium-8 large-8 columns box-td">
+              <figure class="small-5 medium-7 large-7 left th">
+                <a href="#" title=""><img src="media/news2.jpg" alt=""></a>
+              </figure>
+
+              <article class="small-11 medium-9 large-9 left ads-in-left">
+                <small class="font-header red tag">Bate-boca</small>
+                <h4><a href="#" title="">Necessitatibus, repellendus, maxime, et ab deserunt at eum sit ex alias dolor rem natus ipsam</a></h4>
+                <p><a href="#" title="" class="color-body font-header"><span class="icon-comment hack-icon"></span> 3 comentários</a></p>
+              </article>
+            </div>
+          </section><!-- //politica -->
+
+          <div class="hl small-16"></div><!-- //hl -->
+
+          <figure class="large-5 medium-6 left ads show-for-medium-up mbt">
+            <a href="#">
+              <img src="media/ads3.jpg" alt="">
+            </a>
+          </figure>
+
+          <section class="small-16 medium-10 large-11 columns ads-in-left mbt mtp">
+            <header class="small-16 left box-header">
+              <h3 class="top-header"><a href="#" title="" class="red text-up"><span class="icon-folder"></span> Policial</a></h3>
+            </header>
+            
+            <div class="box-td left small-16">
+              <figure class="th small-4 left">
+                <a href="#" title="">
+                  <img src="media/news3.jpg" alt="">
+                </a>
+              </figure>
+
+              <article class="small-12 columns ads-in-left">
+                <small class="font-header red tag">Bate-boca</small>
+                <h4><a href="#" title="">Necessitatibus, repellendus, maxime, et ab deserunt at eum sit ex alias dolor rem natus ipsam</a></h4>
+                <p class="box-except">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, illum consequuntur...</p>
+                <p><a href="#" title="" class="font-header"><span class="icon-comment hack-icon"></span> 3 comentários</a></p>
+              </article>
+            </div>
+          </section>
 
         </div><!-- //the-content -->
       </div><!-- //row -->

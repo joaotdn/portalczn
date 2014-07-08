@@ -3,7 +3,9 @@
 figure {
 	margin: 0;
 }
-
+ul {
+	margin: 0;
+}
 
 //Classes utilitárias
 //-----------------------------------------------------
@@ -23,12 +25,11 @@ figure {
 	font-family: 'Fjord-One' !important;
 }
 
-.font-body {
-	font-family: 'Fjord-One' !important;
-}
-
 .font-header {
 	font-family: 'LeagueGothic-Regular' !important;
+	&.tag {
+		font-size: 100%;
+	}
 }
 
 .display-block {
@@ -52,6 +53,10 @@ figure {
 	color: $secondary-color;
 }
 
+.color-body {
+	color: $body-font-color;
+}
+
 .trs {
 	@include transition;
 }
@@ -61,13 +66,87 @@ figure {
 }
 
 .mbt {
+	margin-bottom: rem-calc(20);
+}
+
+.mtp {
 	margin-top: rem-calc(20);
 }
 
 /*
 	Classes exclusivas (módulos do template)
+	-----------------------------------------------------
  */
 .box-header {
-	border-bottom: 1px solid $secondary-color;
-	margin-bottom: rem-calc(20);
+	border-bottom: 1px solid $grey;
+	margin-bottom: rem-calc(10);
+}
+
+form button.postfix {
+	width: 100% !important;
+}
+
+/*
+	alinha icone com o texto
+ */
+.hack-icon {
+	float: left;
+	margin: rem-calc(2) rem-calc(5) 0 0;
+}
+
+/*
+	linha horizontal
+ */
+.hl {
+	@extend .left;
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #fff;
+}
+
+/*
+	mobile menu
+ */
+.off-canvas-wrap {
+	overflow: auto;
+	overflow-x: hidden;
+}
+.right-off-canvas-menu {
+	display: none;
+}
+
+/*
+	Publicidades
+ */
+.ads {
+	padding: rem-calc(20) 0;
+	&.float {
+		margin: 0 rem-calc(10);
+	}
+}
+
+.ads-in-left {
+	padding-left: rem-calc(20);
+}
+
+/*
+	Módulo box de conteúdo
+ */
+.box-content {
+	padding-left: rem-calc(10);
+
+	h4 {	
+		line-height: 1.2;
+	}
+}
+
+.box-td {
+	padding-top: rem-calc(10);
+}
+
+.box-thumb {
+	border: 2px solid $grey;
+}
+
+.box-except {
+	margin-bottom: rem-calc(5);
 }
