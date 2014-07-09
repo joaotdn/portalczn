@@ -7,6 +7,20 @@ ul {
 	margin: 0;
 }
 
+/*
+	Modificações nas classes dos Foundation
+ */
+.reveal-modal {
+	z-index: 999;
+}
+.reveal-modal-bg {
+	z-index: 995;
+}
+.th {
+	img {
+		width: 100% !important;
+	}
+}
 //Classes utilitárias
 //-----------------------------------------------------
 .rel {
@@ -34,6 +48,15 @@ ul {
 
 .display-block {
 	display: block;
+}
+
+.display-tb {
+	display: table;
+}
+
+.display-tbc {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .wrapper {
@@ -69,19 +92,35 @@ ul {
 	margin-bottom: rem-calc(20);
 }
 
+.no-mbt {
+	margin-bottom: 0;
+}
+
 .mtp {
 	margin-top: rem-calc(20);
+}
+
+.pr {
+	padding-right: rem-calc(10);
+}
+
+.pl {
+	padding-left: rem-calc(10);
+}
+
+.text-except {
+	font-size: rem-calc(13);
 }
 
 /*
 	Classes exclusivas (módulos do template)
 	-----------------------------------------------------
  */
-.box-header {
-	border-bottom: 1px solid $grey;
-	margin-bottom: rem-calc(10);
-}
 
+
+/*
+	Busca
+ */
 form button.postfix {
 	width: 100% !important;
 }
@@ -118,9 +157,11 @@ form button.postfix {
 	Publicidades
  */
 .ads {
-	padding: rem-calc(20) 0;
+	padding-top: rem-calc(20);
+	padding-bottom: rem-calc(20);
 	&.float {
-		margin: 0 rem-calc(10);
+		padding-top: rem-calc(0);
+		padding-bottom: rem-calc(0);
 	}
 }
 
@@ -139,14 +180,54 @@ form button.postfix {
 	}
 }
 
+.box-header {
+	border-bottom: 1px solid $grey;
+	margin-bottom: rem-calc(10);
+}
+
 .box-td {
 	padding-top: rem-calc(10);
 }
 
 .box-thumb {
-	border: 2px solid $grey;
+	margin-top: rem-calc(10);
 }
 
 .box-except {
 	margin-bottom: rem-calc(5);
+}
+
+.box-list {
+	border-top: 1px solid $grey;
+	padding-top: rem-calc(10);
+
+	&:hover {
+		.icon-text {
+			color: $yellow;
+		}
+	}
+}
+
+.box-in-list {
+	figure {
+		margin-bottom: rem-calc(10);
+		border-bottom: 1px solid $grey;
+
+		&:last-child {
+			border: none;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.icon-text {
+	@extend .trs;
+}
+
+.see-more {
+	color: shade(#ccc,30%);
+	@extend .trs;
+	&:hover {
+		color: shade(#ccc,60%);
+	}
 }

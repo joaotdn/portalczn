@@ -124,3 +124,59 @@
 		}
 	}
 }
+
+/*
+	Vídeos
+ */
+.pag-videos {
+	a {
+		padding: 20% 0;
+		background-color: $grey;
+
+		&:hover, &.cycle-pager-active {
+			background-color: $primary-color;
+			h4 {
+				color: #fff;
+			}
+		}
+	}
+}
+
+.video-thumb {
+	overflow: hidden;
+
+	figcaption {
+		height: 100%;
+		background-color: rgba($primary-color,.5);
+		cursor: pointer;
+		@extend .trs;
+
+		&:hover {
+			background-color: rgba($primary-color,.3);
+			h5 {
+				color: $yellow;
+			}
+		}
+	}
+}
+
+.play-video {
+	bottom: 0;
+	h5 {
+		@extend .trs;
+	}
+}
+
+/*
+	Fotos
+ */
+.list-fotos {
+	margin-top: rem-calc(10);
+}
+
+/*
+	Blog J. França
+ */
+.blog-header {
+	border-bottom: 1px solid $primary-color;
+}

@@ -26,6 +26,27 @@
 	.nav-slides {
 		top: 25%;
 	}
+
+	//muda cor do link de comentários
+	.small-grey {
+		a {
+			color: $body-font-color;
+		}
+	}
+
+	//padding lateral
+	.small-ads-left {
+		padding-left: rem-calc(20);
+	}
+
+	/*
+		Galeria de fotos
+	 */
+	.foto-thumb {
+		figcaption {
+			padding-top: 0 !important;
+		}
+	}
 }
 
 @media #{$medium-only} {
