@@ -1,3 +1,9 @@
+.icon-logo-footer {
+  background-image: url(images/spritesheet.png);
+  background-position: 0px -220px;
+  width: 141px;
+  height: 62px;
+}
 .icon-logo-small {
   background-image: url(images/spritesheet.png);
   background-position: 0px -132px;

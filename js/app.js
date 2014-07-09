@@ -39,3 +39,10 @@ $(document)
   		$('.right-off-canvas-menu').css('display', 'none');
   		$('.off-canvas-wrap').css('overflow','auto');
 	});
+
+/*
+  Enumera as mais lidas
+ */
+$('span','.popular').each(function(i) {
+  $(this).text(i + 1);
+});

@@ -231,6 +231,8 @@
                 data-cycle-slides="> li"
                 data-cycle-pager=".pag-news"
                 data-cycle-pager-template="<a href='#'></a>"
+                data-cycle-swipe="true"
+                data-cycle-swipe-fx="scrollVert"
               >
                 <li class="small-16 left">
                   <small class="font-header tag red">Policial</small>
@@ -437,7 +439,7 @@
             </figure>
           </section><!-- //box conteudo -->
           
-          <div class="small-16 columns mbt show-for-medium-up">
+          <div class="small-16 columns show-for-medium-up">
             <div class="hl small-16 left"></div>
           </div><!-- //hl -->
 
@@ -471,6 +473,8 @@
                 data-cycle-slides="> figure"
                 data-cycle-pager=".pag-videos"
                 data-cycle-pager-template='<a href="#" class="display-tb small-16 left text-center"><h4 class="display-tbc font-header red">{{slideNum}}</h4></a>'
+                data-cycle-swipe="true"
+                data-cycle-swipe-fx="scrollVert"
               >
                 <figure class="small-16 left rel video-thumb" data-reveal-id="video-modal">
                   <a href="#" class="display-block left small-16">
@@ -530,6 +534,8 @@
 
             <nav class="small-16 left list-fotos cycle-slideshow"
               data-cycle-fx="scrollHorz"
+              data-cycle-swipe="true"
+              data-cycle-swipe-fx="scrollVert"
               data-cycle-timeout="8000"
               data-cycle-slides="> figure"
               data-cycle-pager=".pag-fotos"
@@ -657,6 +663,7 @@
         </div><!-- //hl -->
           
         <aside id="sidebar" class="small-16 medium-16 large-4 columns">
+
           <section class="small-16 medium-6 large-16 left">
             <figure class="small-3 medium-4 large-5 left mbt th">
               <a href="#" title="">
@@ -666,10 +673,14 @@
 
             <article class="small-13 medium-12 large-11 left ads-in-left">
               <header class="small-16 left blog-header">
-                <h3 class="text-up large-text-center"><a href="#" title="">Blog J. França</a></h3>
+                <h4 class="text-up large-text-center"><a href="#" title="">Blog J. França</a></h4>
               </header>
               <p class="large-text-center box-td left"><a href="#" title="" class="color-body">Lorem ipsum dolor sit amet</a></p>
             </article>
+
+            <div class="small-16 left mbt">
+              <div class="hl small-16 left"></div>
+            </div><!-- //hl -->
 
             <figure class="small-16 left show-for-medium-up mbt">
               <a href="#">
@@ -677,10 +688,192 @@
               </a>
             </figure><!-- //publicidade -->
           </section><!-- //Ultimas do Blog -->
+          
+          <div class="small-16 left mbt show-for-large-up">
+            <div class="hl small-16 left"></div>
+          </div><!-- //hl -->
+
+          <section class="medium-ads-left small-16 medium-6 large-16 left">
+            <header class="widget-header small-16 left rel mbt">
+              <h4 class="text-up red">Tv Diário do Sertão</h4>
+              <div class="block-red abs"></div>
+            </header>
+
+            <figure class="small-16 left">
+              <a href="http://diariodosertao.com.br/artigos/view/ds/midia/De%20segunda%20%C3%A1%20sexta%20das%2014h%20%C3%A1s%2021h%20se%20ligue%20na%20programa%C3%A7%C3%A3o%20da%20Tv%20Di%C3%A1rio%20do%20Sert%C3%A3o/1" class="display-block small-8 medium-16 large-16 left mbt th click-tv" target="_blank">
+                <img src="media/tv.jpg" alt="">
+              </a>
+
+              <figcaption class="small-8 medium-16 large-16 left mbt small-ads-left">
+                <h4 class="no-mbt"><a href="http://diariodosertao.com.br/artigos/view/ds/midia/De%20segunda%20%C3%A1%20sexta%20das%2014h%20%C3%A1s%2021h%20se%20ligue%20na%20programa%C3%A7%C3%A3o%20da%20Tv%20Di%C3%A1rio%20do%20Sert%C3%A3o/1" title="TV Diário do Sertão" target="_blank" class="font-header color-body">De segunda á sexta das 14h ás 21h se ligue na programação da Tv Diário do Sertão</a></h4>
+              </figcaption>
+            </figure>
+          </section><!-- //tv diario do sertão -->
+
+          <div class="small-16 left mbt hide-for-medium">
+            <div class="hl small-16 left"></div>
+          </div><!-- //hl -->
+
+          <section class="small-16 medium-4 large-16 left medium-ads-left">
+            <header class="widget-header small-16 left rel mbt">
+              <h4 class="text-up red">Mais lidas</h4>
+              <div class="block-red abs"></div>
+            </header>
+
+            <nav class="small-16 left mbt">
+              <ul class="no-bullet popular small-16 left">
+                <li>
+                  <span class="display-tbc"></span>
+                  <h5><a href="#" title="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, dignissimos</a></h5>
+                </li>
+
+                <li>
+                  <span class="display-tbc"></span>
+                  <h5><a href="#" title="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, dignissimos</a></h5>
+                </li>
+
+                <li>
+                  <span class="display-tbc"></span>
+                  <h5><a href="#" title="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, dignissimos</a></h5>
+                </li>
+              </ul>
+            </nav>
+          </section><!-- //Mais lidas -->
+
+          <div class="small-16 left mbt">
+            <div class="hl small-16 left"></div>
+          </div><!-- //hl -->
+
+          <figure class="medium-6 large-16 left show-for-medium-up mbt">
+            <a href="#">
+              <img src="media/ads7.jpg" alt="">
+            </a>
+          </figure><!-- //publicidade -->
+
+          <div class="small-16 left mbt show-for-large-up">
+            <div class="hl small-16 left"></div>
+          </div><!-- //hl -->
+
+          <section class="small-16 medium-10 large-16 left medium-ads-left mbt">
+            <header class="widget-header small-16 left rel mbt">
+              <h4 class="text-up red">Classificados</h4>
+              <div class="block-red abs"></div>
+            </header>
+
+            <nav class="nav-ads small-16 left">
+              <a href="#" title="" class="display-block small-16 left text-center next-ads"><span class="icon-arrow-up3"></span></a>
+              <ul class="no-bullet ads-list small-16 left cycle-slideshow"
+                data-cycle-pause-on-hover="true"
+                data-cycle-speed="500"
+                data-cycle-slides="> li"
+                data-cycle-timeout="10000"
+                data-cycle-swipe="true"
+                data-cycle-swipe-fx="scrollVert"
+                data-cycle-prev=".prev-ads"
+                data-cycle-next=".next-ads"
+                data-cycle-fx="scrollVert"
+              >
+                <li>
+                  <figure class="small-16 columns">
+                    <a href="#" title="" class="ads-thumb left small-4 medium-3 large-5 left th">
+                      <img src="media/cla1.jpg" alt="">
+                    </a>
+                    <figcaption class="small-12 medium-13 large-11 left ads-in-left">
+                      <h5><a href="#" title="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, molestiae, quos, optio, praesentium voluptatem</a></h5>
+                    </figcaption>
+                  </figure>
+                </li>
+
+                <li>
+                  <figure class="small-16 columns">
+                    <a href="#" title="" class="ads-thumb left small-4 medium-3 large-5 left th">
+                      <img src="media/cla2.jpg" alt="">
+                    </a>
+                    <figcaption class="small-12 medium-13 large-11 left ads-in-left">
+                      <h5><a href="#" title="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, molestiae, quos, optio, praesentium voluptatem</a></h5>
+                    </figcaption>
+                  </figure>
+                </li>
+
+                <li>
+                  <figure class="small-16 columns">
+                    <a href="#" title="" class="ads-thumb left small-4 medium-3 large-5 left th">
+                      <img src="media/cla1.jpg" alt="">
+                    </a>
+                    <figcaption class="small-12 medium-13 large-11 left ads-in-left">
+                      <h5><a href="#" title="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, molestiae, quos, optio, praesentium voluptatem</a></h5>
+                    </figcaption>
+                  </figure>
+                </li>
+
+                <li>
+                  <figure class="small-16 columns">
+                    <a href="#" title="" class="ads-thumb left small-4 medium-3 large-5 left th">
+                      <img src="media/cla2.jpg" alt="">
+                    </a>
+                    <figcaption class="small-12 medium-13 large-11 left ads-in-left">
+                      <h5><a href="#" title="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, molestiae, quos, optio, praesentium voluptatem</a></h5>
+                    </figcaption>
+                  </figure>
+                </li>
+              </ul>
+              <a href="#" title="" class="display-block small-16 left text-center prev-ads"><span class="icon-arrow-down4"></span></a>
+            </nav>
+          </section><!-- //classificados -->
+
+          <div class="small-16 left mbt">
+            <div class="hl small-16 left"></div>
+          </div><!-- //hl -->
+
+          <section class="small-16 left">
+            <header class="widget-header small-16 left rel mbt">
+              <h4 class="text-up red">Encontre-nos no Facebook</h4>
+              <div class="block-red abs"></div>
+            </header>
+
+            <div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-width="300" data-height="300" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+          </section><!-- //facebook -->
+
+          <div class="small-16 left mbt show-for-large-up clearfix">
+            <div class="hl small-16 left"></div>
+          </div><!-- //hl -->
+
+          <section class="small-16 left show-for-large-up">
+            <header class="widget-header small-16 left rel mbt">
+              <h4 class="text-up red">Rádios on-line</h4>
+              <div class="block-red abs"></div>
+            </header>
+
+            <a href="#" data-options="align:top" data-dropdown="drop" class="button small-16 left radius">Selecionar Rádio</a>
+            <ul id="drop" class="small f-dropdown" data-dropdown-content>
+              <li><a href="#"><span class="icon-sound"></span> Difusora AM</a></li>
+              <li><a href="#"><span class="icon-sound"></span> Patamuté FM</a></li>
+              <li><a href="#"><span class="icon-sound"></span> Rádio Alto Piranhas</a></li>
+            </ul>
+          </section>
         </aside><!-- //sidebar -->
 
       </div><!-- //row -->
     </section><!-- //wrapper -->
+
+    <footer id="footer" class="small-16">
+      <div class="row">
+        <figure class="small-16 columns text-center mbt">
+          <a href="#" title="Página principal" class="display-ib icon-logo-footer centered"></a>
+        </figure>
+
+        <nav class="small-16 columns text-center mbt nav-footer">
+          <a href="#" title="Notícias"><span class="icon-list"></span> Notícias</a>
+          <a href="#" title="Classificados"><span class="icon-suitcase"></span> Classificados</a>
+          <a href="#" title="Vídeos"><span class="icon-video"></span> Vídeos</a>
+        </nav>
+
+        <p class="small-16 columns text-center mbt">&copy; 2014. Portal CZN - O Sertão em Notícias. Todos os direitos reservados.</p>
+        <h5 class="small-16 columns text-center mbt">
+          <a href="#" title="Design e desenvolvimento">JT</a>
+        </h5>
+      </div><!-- //row -->
+    </footer><!-- //footer -->
     
     <div id="video-modal" class="reveal-modal medium" data-reveal>
       <div class="flex-video">
@@ -691,5 +884,14 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="scripts.js"></script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=285518124940152&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
   </body>
 </html>

@@ -59,6 +59,10 @@ ul {
 	vertical-align: middle;
 }
 
+.display-ib {
+	display: inline-block;
+}
+
 .wrapper {
 	border-top: 1px solid #fff;
 	padding: rem-calc(20) 0;
@@ -230,4 +234,11 @@ form button.postfix {
 	&:hover {
 		color: shade(#ccc,60%);
 	}
+}
+
+/*
+	Módulo Widget (Sidebars)
+ */
+.widget-header {
+	border-bottom: 1px solid $grey;
 }

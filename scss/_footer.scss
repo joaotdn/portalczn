@@ -1,0 +1,22 @@
+/*
+	Configurações gerais do rodapé
+ */
+#footer {
+	padding: rem-calc(20) 0;
+	background-color: $body-font-color;
+	border-top: 10px solid $grey;
+
+	p, a { color: $body-bg; }
+
+	p {
+		font-size: rem-calc(12);
+	}
+}
+
+.nav-footer {
+	a {	
+		@extend .font-header;
+		font-size: rem-calc(20);
+		margin: 0 rem-calc(10);
+	}
+}
