@@ -1,89 +1,4 @@
-<!doctype html>
-<html class="no-js off-canvas-wrap" lang="pt-br" data-offcanvas>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portal CZN | O Sertão em Notícias</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
-  </head>
-  <body class="inner-wrap">
-
-  <!-- Off Canvas Menu Left -->
-  <aside class="left-off-canvas-menu">
-      <ul class="off-canvas-list font-header">
-        <li><label>Editorias</label></li>
-        <li><a href="#">Cajazeiras</a></li>
-        <li><a href="#">Policial</a></li>
-        <li><a href="#">Política</a></li>
-        <li><a href="#">Brasil</a></li>
-        <li><a href="#">Paraíba</a></li>
-        <li><a href="#">Mundo</a></li>
-      </ul>
-  </aside>
-
-  <!-- Off Canvas Menu Right -->
-  <aside class="right-off-canvas-menu">
-      <ul class="off-canvas-list font-header">
-        <li><label>Seguir</label></li>
-        <li><a href="#" title="Seguir no Twitter"><span class="icon-twitter"></span> Twitter</a></li>
-        <li><a href="#" title="Seguir no Facebook"><span class="icon-facebook3"></span> Facebook</a></li>
-        <li><label>Fale conosco</label></li>
-        <li><a href="#"><span class="icon-mail"></span> Mande um email</a></li>
-        <li><a href="#"><span class="icon-megaphone"></span> Anuncie no site</a></li>
-      </ul>
-  </aside>
-
-  <!-- close the off-canvas menu -->
-  <a class="exit-off-canvas"></a>
-
-    <section class="small-16 top-bar" data-topbar>
-      <div class="row">
-        <nav class="top-bar-section">
-          <a class="left-off-canvas-toggle left show-for-small-only" href="#"><span class="icon-menu"></span></a>
-          <a class="right-off-canvas-toggle right show-for-small-only" href="#"><span class="icon-share"></span></a>
-
-          <ul class="left text-up font-header">
-            <li class="has-dropdown">
-              <a href="#" title="" class="active">Editorias</a>
-              <ul class="dropdown">
-                <li><a href="#">Cajazeiras</a></li>
-                <li><a href="#">Policial</a></li>
-                <li><a href="#">Política</a></li>
-                <li><a href="#">Brasil</a></li>
-                <li><a href="#">Paraíba</a></li>
-                <li><a href="#">Mundo</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Classificados</a></li>
-            <li><a href="#">Vídeos</a></li>
-          </ul>
-
-          <ul class="right">
-            <li><a href="#" title="Seguir no Facebook" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-bottom radius"><span class="icon-facebook3"></span></a></li>
-            <li><a href="#" title="Seguir no Twitter" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-bottom radius"><span class="icon-twitter"></span></a></li>
-            <li><a href="#" title="Anunciar no site" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-bottom radius"><span class="icon-megaphone"></span></a></li>
-            <li><a href="#" title="Contato" data-tooltip data-options="disable_for_touch:true" class="has-tip tip-bottom radius"><span class="icon-mail"></span></a></li>
-          </ul>
-        </nav>
-
-      </div><!-- //row -->
-    </section><!-- //top-bar -->
-
-    <section id="header" class="small-16">
-      <div class="row">
-        <figure class="large-4 small-16 columns">
-          <a href="#" title="Página principal" class="display-block icon-logo show-for-medium-up"></a>
-          <a href="#" title="Página principal" class="display-block icon-logo-small hide-for-medium-up"></a>
-        </figure>
-
-        <figure class="large-10 small-16 columns ads-top show-for-medium-up">
-          <a href="#" class="display-block text-right medium-only-text-center">
-            <img src="media/ads1.png" alt="">
-          </a>
-        </figure>
-      </div><!-- //row -->
-    </section><!-- //header -->
+<?php get_header(); ?>
 
     <section class="wrapper small-16">
 
@@ -232,7 +147,7 @@
                 data-cycle-pager=".pag-news"
                 data-cycle-pager-template="<a href='#'></a>"
                 data-cycle-swipe="true"
-                data-cycle-swipe-fx="scrollVert"
+                data-cycle-swipe-fx="scrollHorz"
               >
                 <li class="small-16 left">
                   <small class="font-header tag red">Policial</small>
@@ -474,7 +389,7 @@
                 data-cycle-pager=".pag-videos"
                 data-cycle-pager-template='<a href="#" class="display-tb small-16 left text-center"><h4 class="display-tbc font-header red">{{slideNum}}</h4></a>'
                 data-cycle-swipe="true"
-                data-cycle-swipe-fx="scrollVert"
+                data-cycle-swipe-fx="scrollHorz"
               >
                 <figure class="small-16 left rel video-thumb" data-reveal-id="video-modal">
                   <a href="#" class="display-block left small-16">
@@ -535,7 +450,7 @@
             <nav class="small-16 left list-fotos cycle-slideshow"
               data-cycle-fx="scrollHorz"
               data-cycle-swipe="true"
-              data-cycle-swipe-fx="scrollVert"
+              data-cycle-swipe-fx="scrollHorz"
               data-cycle-timeout="8000"
               data-cycle-slides="> figure"
               data-cycle-pager=".pag-fotos"
@@ -768,7 +683,7 @@
                 data-cycle-slides="> li"
                 data-cycle-timeout="10000"
                 data-cycle-swipe="true"
-                data-cycle-swipe-fx="scrollVert"
+                data-cycle-swipe-fx="scrollHorz"
                 data-cycle-prev=".prev-ads"
                 data-cycle-next=".next-ads"
                 data-cycle-fx="scrollVert"
@@ -856,42 +771,4 @@
       </div><!-- //row -->
     </section><!-- //wrapper -->
 
-    <footer id="footer" class="small-16">
-      <div class="row">
-        <figure class="small-16 columns text-center mbt">
-          <a href="#" title="Página principal" class="display-ib icon-logo-footer centered"></a>
-        </figure>
-
-        <nav class="small-16 columns text-center mbt nav-footer">
-          <a href="#" title="Notícias"><span class="icon-list"></span> Notícias</a>
-          <a href="#" title="Classificados"><span class="icon-suitcase"></span> Classificados</a>
-          <a href="#" title="Vídeos"><span class="icon-video"></span> Vídeos</a>
-        </nav>
-
-        <p class="small-16 columns text-center mbt">&copy; 2014. Portal CZN - O Sertão em Notícias. Todos os direitos reservados.</p>
-        <h5 class="small-16 columns text-center mbt">
-          <a href="#" title="Design e desenvolvimento">JT</a>
-        </h5>
-      </div><!-- //row -->
-    </footer><!-- //footer -->
-    
-    <div id="video-modal" class="reveal-modal medium" data-reveal>
-      <div class="flex-video">
-        <iframe width="420" height="315" src="//www.youtube.com/embed/aiBt44rrslw" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <a class="close-reveal-modal">&#215;</a>
-    </div>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="scripts.js"></script>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=285518124940152&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-  </body>
-</html>
+<?php get_footer(); ?>
