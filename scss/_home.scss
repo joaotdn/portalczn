@@ -55,7 +55,6 @@
 	figcaption {
 		bottom: 0;
 		background: rgba($primary-color, 0.8);
-		transform: translateY(10px);
 
 		@include transition(all .3s linear);
 
@@ -81,12 +80,8 @@
 	}
 }
 
-.slide-img {
+a.slide-img {
 	@extend .display-block;
-	img {
-		height: 100%;
-		width: auto;
-	}
 }
 
 #progress {

@@ -59,11 +59,11 @@
 		jOverlay = $('<div></div>')
 		.attr('id', 'jpreOverlay')
 		.css({
-			position: "fixed",
+			position: "absolute",
 			top: 0,
 			left: 0,
 			width: '100%',
-			height: '100%',
+			height: '52px',
 			zIndex: 9999999
 		})
 		.appendTo('body');

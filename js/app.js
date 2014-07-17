@@ -3,6 +3,18 @@
 $(document).foundation();
 
 /*
+  Configuração geral para chamadas AJAX
+ */
+$.ajaxSetup({
+    url : getData.ajaxDir,
+    type : 'GET',
+    dataType : 'html',
+    error: function(e) {
+      alert('Error: ' + e.statusText);
+    }
+});
+
+/*
 	Config. Slide de destaques 
 	na página principal com jquery.cycle.plugin
  */
@@ -45,4 +57,32 @@ $(document)
  */
 $('span','.popular').each(function(i) {
   $(this).text(i + 1);
+});
+
+/*
+  VIDEOS
+ */
+
+//Fazer chamada de video na pagina principal
+$('.video-thumb').on('click touchstart', function() {
+  var postid = $(this).data('postid');
+
+  $.ajax({
+    data: {
+      action: 'CZN_request_video',
+      postid: postid
+    },
+    beforeSend: function() {
+      $('.ajax-loader').show();
+      $('.flex-video').hide();
+    },
+    complete: function() {
+      $('.ajax-loader').hide(100,function() {
+        $('.flex-video').fadeIn('fast');
+      });
+    },
+    success: function(data) {
+      $('.flex-video').html(data);
+    }
+  });
 });

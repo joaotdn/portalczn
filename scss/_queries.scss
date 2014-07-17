@@ -6,7 +6,7 @@
 	/*
 	 	Slide destaques
 	 */
-	.slide-img {
+	a.slide-img {
 		img {
 			width: 100%;
 			height: auto;
@@ -93,5 +93,16 @@
 		width: rem-calc(1280) !important;
 		min-width: rem-calc(1280) !important;
 		max-width: rem-calc(1280) !important;
+	}
+	
+	/*
+		Slide destaques
+	 */
+	a.slide-img {
+		height: 100%;
+		img {
+			height: 100%;
+			width: auto;
+		}
 	}
 }

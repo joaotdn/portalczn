@@ -116,10 +116,21 @@ ul {
 	font-size: rem-calc(13);
 }
 
+.centered {
+	margin: 0 auto;
+}
+
 /*
 	Classes exclusivas (módulos do template)
 	-----------------------------------------------------
  */
+
+/*
+	Loaders
+ */
+.ajax-loader {
+	padding: rem-calc(60) 0;
+}
 
 
 /*

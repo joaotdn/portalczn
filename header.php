@@ -9,6 +9,14 @@
     <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-ico"/>
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />
+    <script>
+      //<![CDATA[
+      var getData = {
+        'urlDir':'<?php bloginfo('template_directory'); ?>/',
+        'ajaxDir':'<?php echo stripslashes(get_admin_url()).'admin-ajax.php'; ?>'
+      }
+      //]]>
+    </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
 
     <?php wp_head(); ?>
@@ -89,7 +97,7 @@
               $videos_id = get_cat_ID( 'Videos' );
               $videos_link = get_category_link( $category_id );
 
-              if($videos_link):
+              if($videos_id):
             ?>
             <li><a href="<?php echo esc_url( $videos_link ); ?>">Vídeos</a></li>
             <?php endif; ?>
@@ -131,3 +139,16 @@
         </figure>
       </div><!-- //row -->
     </section><!-- //header -->
+
+    <section class="wrapper small-16">
+
+      <div class="row">
+        <form action="<?php bloginfo('home'); ?>/" class="small-16 columns form-search" method="get">
+            <div class="small-13 medium-14 large-15 left">
+              <input type="text" placeholder="Buscar no site..." id="s">
+            </div>
+
+            <div class="small-3 medium-2 large-1 left end">
+              <button type="submit" class="postfix send-search"><span class="icon-search"></span></button>
+            </div>
+        </form><!-- //form-search -->
