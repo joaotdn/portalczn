@@ -99,133 +99,34 @@
             <div class="hl small-16 left"></div>
           </div><!-- //hl -->
 
-          <section class="gallery-box small-16 medium-6 large-6 columns mbt">
-            <header class="small-16 left box-header">
-              <h3 class="top-header left">
-                <a href="#" title="" class="red text-up"><span class="icon-pictures"></span> Fotos</a>
-              </h3>
-              <h4>
-                <a href="#" class="see-more" title="Veja mais"><span class="right icon-list"></span></a>
-              </h4>
-            </header>
-
-            <nav class="small-16 left list-fotos cycle-slideshow"
-              data-cycle-fx="scrollHorz"
-              data-cycle-swipe="true"
-              data-cycle-swipe-fx="scrollHorz"
-              data-cycle-timeout="8000"
-              data-cycle-slides="> figure"
-              data-cycle-pager=".pag-fotos"
-              data-cycle-pager-template="<a href='#'></a>"
-            >
-              <figure class="small-16 left foto-thumb">
-                <a href="#" class="display-block small-7 medium-16 large-16 left th">
-                  <img src="media/fotos1.jpg" alt="">
-                </a>
-
-                <figcaption class="small-9 medium-16 large-16 left small-ads-left box-td">
-                  <h4><a href="#" title="">Necessitatibus, repellendus, maxime</a></h4>
-                </figcaption>
-              </figure>
-
-              <figure class="small-16 left foto-thumb">
-                <a href="#" class="display-block small-7 medium-16 large-16 left th">
-                  <img src="media/fotos2.jpg" alt="">
-                </a>
-
-                <figcaption class="small-9 medium-16 large-16 left small-ads-left box-td">
-                  <h4><a href="#" title="">Necessitatibus, repellendus, maxime</a></h4>
-                </figcaption>
-              </figure>
-
-              <figure class="small-16 left foto-thumb">
-                <a href="#" class="display-block small-7 medium-16 large-16 left th">
-                  <img src="media/fotos3.jpg" alt="">
-                </a>
-
-                <figcaption class="small-9 medium-16 large-16 left small-ads-left box-td">
-                  <h4><a href="#" title="">Necessitatibus, repellendus, maxime</a></h4>
-                </figcaption>
-              </figure>
-            </nav>
-
-            <div class="pag-fotos bullets small-16 left text-center box-td">
-            </div>
-          </section><!-- //fotos -->
+          <?php
+            /*
+              Slide de FOTOS
+             */
+            include_once 'includes/fotos_slide.php';
+          ?>
           
           <div class="small-16 columns mbt">
             <div class="hl small-16 left"></div>
           </div><!-- //hl -->
 
-          <section class="small-16 medium-8 large-6 columns">
-            <header class="small-16 left box-header">
-              <h3 class="top-header left">
-                <a href="#" title="" class="red text-up"><span class="icon-folder"></span> Esportes</a>
-              </h3>
-              <h4>
-                <a href="#" class="see-more" title="Veja mais"><span class="right icon-list"></span></a>
-              </h4>
-            </header>
-            
-            <figure class="small-16 left box-thumb mbt">
-              <a href="#" title="" class="display-block small-3 medium-6 large-5 left th">
-                <img src="media/news7.jpg" alt="">
-              </a>
-
-              <figcaption class="small-13 medium-10 large-11 left ads-in-left">
-                <small class="font-header red tag">Bate-boca</small>
-                <h5><a href="#" title="">Necessitatibus, repellendus, maxime, et ab deserunt at eum sit ex alias dolor rem natus ipsam</a></h5>
-              </figcaption>
-            </figure>
-
-            <figure class="small-16 left box-thumb mbt">
-              <a href="#" title="" class="display-block small-3 medium-6 large-5 left th">
-                <img src="media/news8.jpg" alt="">
-              </a>
-
-              <figcaption class="small-13 medium-10 large-11 left ads-in-left">
-                <small class="font-header red tag">Bate-boca</small>
-                <h5><a href="#" title="">Necessitatibus, repellendus, maxime, et ab deserunt at eum sit ex alias dolor rem natus ipsam</a></h5>
-              </figcaption>
-            </figure>
-
-          </section><!-- //box conteudo -->
+          <?php
+            /*
+              Box de notícias ESPORTES
+             */
+            require_once 'includes/box_esportes.php';
+          ?>
           
           <div class="small-16 columns mbt show-for-small-only">
             <div class="hl small-16 left"></div>
           </div><!-- //hl -->
 
-          <section class="small-16 medium-8 large-5 columns">
-            <header class="small-16 left box-header">
-              <h3 class="top-header left">
-                <a href="#" title="" class="red text-up"><span class="icon-folder"></span> Brasil</a>
-              </h3>
-              <h4>
-                <a href="#" class="see-more" title="Veja mais"><span class="right icon-list"></span></a>
-              </h4>
-            </header>
-            
-            <figure class="small-16 left box-thumb">
-              <a href="#" title="" class="display-block small-3 medium-6 large-5 left th mbt">
-                <img src="media/news9.jpg" alt="">
-              </a>
-
-              <figcaption class="small-13 medium-10 large-11 left ads-in-left">
-                <small class="font-header red tag">Bate-boca</small>
-                <h5><a href="#" title="">Necessitatibus, repellendus, maxime, et ab deserunt at eum sit ex alias dolor rem natus ipsam</a></h5>
-              </figcaption>
-            </figure>
-
-            <article class="small-16 left box-list">
-              <h5>
-                <a href="#" title="" class="font-header display-tb">
-                  <span class="icon-text red display-tbc"></span>
-                  <span class="pl display-tbc">Est, odit, illum aliquam similique nesciunt harum porro sed reiciendis doloribus unde praesentium sint atque</span>
-                </a>
-              </h5>
-            </article>
-
-          </section><!-- //box conteudo -->
+          <?php
+            /*
+              Box de notícias BRASIL
+             */
+            require_once 'includes/box_brasil.php';
+          ?>
 
           <figure class="large-5 medium-6 columns ads float show-for-large-up mbt">
             <a href="#">

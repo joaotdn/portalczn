@@ -69,7 +69,7 @@ $('.video-thumb').on('click touchstart', function() {
 
   $.ajax({
     data: {
-      action: 'CZN_request_video',
+      action: 'CZN_request_videos_home',
       postid: postid
     },
     beforeSend: function() {
@@ -85,4 +85,9 @@ $('.video-thumb').on('click touchstart', function() {
       $('.flex-video').html(data);
     }
   });
+});
+
+//Apaga o video ao fechar modal
+$(document).on('closed.fndtn.reveal', '[data-reveal]', function () {
+  $('iframe, object', '.flex-video').remove();
 });

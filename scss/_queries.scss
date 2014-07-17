@@ -86,6 +86,15 @@
 			background-color: rgba($primary-color,1);
 		}
 	}
+
+	/*
+		Slide mais recentes
+	 */
+	.last-news {
+		.cycle-sentinel {
+			min-height: rem-calc(310);
+		}
+	}
 }
 
 @media #{$large-up} {
@@ -103,6 +112,15 @@
 		img {
 			height: 100%;
 			width: auto;
+		}
+	}
+
+	/*
+		Slide mais recentes
+	 */
+	.last-news {
+		.cycle-sentinel {
+			min-height: rem-calc(310);
 		}
 	}
 }

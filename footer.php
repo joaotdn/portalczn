@@ -21,9 +21,8 @@
       <div class="ajax-loader small-16 left text-center">
         <img src="<?php echo get_template_directory_uri(); ?>/ajax-loader.gif" alt="">
       </div>
-      <!--<div class="flex-video">
-        <iframe width="420" height="315" src="//www.youtube.com/embed/aiBt44rrslw" frameborder="0" allowfullscreen></iframe>
-      </div>-->
+      <div class="flex-video">
+      </div>
       <a class="close-reveal-modal">&#215;</a>
     </div>
     

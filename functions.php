@@ -11,24 +11,15 @@ if ( function_exists( 'add_image_size' ) ) {
   add_image_size( 'cidades-thumb', 140, 140, true ); //imagens do box cidades
   add_image_size( 'policial-thumb', 156, 156, true ); //imagens do box policial
   add_image_size( 'videos-thumb', 471, 300, true ); //imagens do box videos
+  add_image_size( 'fotos-thumb', 350, 180, true ); //imagens do box fotos
 }
 
 //Listar Editorias
 function listar_editorias() {
-    $editorias = get_cat_ID( 'Editorias');
     $args = array(
         'hide_empty'    => 0,
-        'child_of'      => $editorias,
-        'title_li'      => ''
-    );
-
-    if($editorias) {
-        wp_list_categories( $args );
-    }
-
-    $args = array(
-        'hide_empty'    => 0,
-        'title_li'      => ''
+        'title_li'      => '',
+        'hierarchical'  => 0,
     );
     //Lista categorias fora das editorias
     wp_list_categories( $args );
@@ -93,6 +84,13 @@ function echo_url_category($cat_name) {
     $category_link = get_category_link( $category_id );
     echo esc_url( $category_link );
 }
+
+/*
+    Chamadas AJAX
+ */
+
+//Requisitar videos na pagina principal
+require_once ( get_stylesheet_directory() . '/functions/home_videos.php' );
 
 
 ?>
