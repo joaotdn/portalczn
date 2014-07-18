@@ -5,14 +5,22 @@
         </figure>
 
         <nav class="small-16 columns text-center mbt nav-footer">
-          <a href="#" title="Notícias"><span class="icon-list"></span> Notícias</a>
-          <a href="#" title="Classificados"><span class="icon-suitcase"></span> Classificados</a>
-          <a href="#" title="Vídeos"><span class="icon-video"></span> Vídeos</a>
+          <?php
+            $editorias_id = get_cat_ID( 'Editorias' );
+            $editorias_link = get_category_link( $editorias_id );
+          ?>
+          <a href="<?php echo $editorias_link; ?>" title="Notícias"><span class="icon-list"></span> Notícias</a>
+          <a href="<?php echo get_post_type_archive_link('classificados'); ?>" title="Classificados"><span class="icon-suitcase"></span> Classificados</a>
+          <?php
+            $videos_id = get_cat_ID( 'Videos' );
+            $videos_link = get_category_link( $videos_id );
+          ?>
+          <a href="<?php echo $videos_link; ?>" title="Vídeos"><span class="icon-video"></span> Vídeos</a>
         </nav>
 
         <p class="small-16 columns text-center mbt">&copy; 2014. Portal CZN - O Sertão em Notícias. Todos os direitos reservados.</p>
         <h5 class="small-16 columns text-center mbt">
-          <a href="#" title="Design e desenvolvimento">JT</a>
+          <a href="http://about.me/jteodoro" title="Design e desenvolvimento" target="_blank">JT</a>
         </h5>
       </div><!-- //row -->
     </footer><!-- //footer -->
