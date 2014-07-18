@@ -12,6 +12,7 @@ if ( function_exists( 'add_image_size' ) ) {
   add_image_size( 'policial-thumb', 156, 156, true ); //imagens do box policial
   add_image_size( 'videos-thumb', 471, 300, true ); //imagens do box videos
   add_image_size( 'fotos-thumb', 350, 180, true ); //imagens do box fotos
+  add_image_size( 'classificados-thumb', 84, 84, true ); //imagens do box classificados
 }
 
 //Listar Editorias
@@ -87,10 +88,30 @@ function echo_url_category($cat_name) {
 
 /*
     Chamadas AJAX
+    ============================
  */
 
 //Requisitar videos na pagina principal
 require_once ( get_stylesheet_directory() . '/functions/home_videos.php' );
 
+/*
+    Post Types
+    ============================
+ */
+
+//BLOG
+require_once ( get_stylesheet_directory() . '/post-types/blog.php' );
+
+//CLASSIFICADOS
+require_once ( get_stylesheet_directory() . '/post-types/classificados.php' );
+
+//RÁDIOS
+require_once ( get_stylesheet_directory() . '/post-types/classificados.php' );
+
+/*
+    Opçoes do tema
+    ============================
+ */
+require_once ( get_stylesheet_directory() . '/theme-options.php' );
 
 ?>
