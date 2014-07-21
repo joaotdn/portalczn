@@ -86,6 +86,14 @@ ul {
 	color: $secondary-color;
 }
 
+.grey {
+	color: #666;
+}
+
+.blue {
+	color: $primary-color;
+}
+
 .color-body {
 	color: $body-font-color;
 }
@@ -258,4 +266,14 @@ form button.postfix {
  */
 .widget-header {
 	border-bottom: 1px solid $grey;
+}
+
+//Lista primaria para loops na sidebar
+.primary-list {
+	article {
+		&:first-child {
+			border: none !important;
+			padding-top: 0;
+		}
+	}
 }

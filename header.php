@@ -132,11 +132,29 @@
           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Página principal" class="display-block icon-logo-small hide-for-medium-up"></a>
         </figure>
 
-        <figure class="large-10 small-16 columns ads-top show-for-medium-up">
-          <a href="#" class="display-block text-right medium-only-text-center">
-            <img src="media/ads1.png" alt="">
-          </a>
+        <figure class="large-3 columns show-for-large-up clima-tempo">
+          <div class="weather-container small-16 left">
+            <h4 class="text-up"><span class="icon-air"></span> <a href="#" data-dropdown="drop1" data-options="is_hover:true">Cajazeiras</a> <i class="icon-arrow-down4"></i></h4>
+            <ul id="drop1" class="f-dropdown weather-choose" data-dropdown-content>
+              <li><a href="#" data-city="Cajazeiras">Cajazeiras</a></li>
+              <li><a href="#" data-city="Sousa">Sousa</a></li>
+              <li><a href="#" data-city="Patos">Patos</a></li>
+              <li><a href="#" data-city="Campina+Grande">Campina Grande</a></li>
+            </ul>
+            <p>
+              <span class="red"></span> 
+              <span class="blue"></span>
+              <span><?php echo get_the_time('d/m/Y'); ?></span>
+            </p>
+          </div>
         </figure>
+
+        <figure class="large-9 small-16 columns ads-top show-for-medium-up text-right">
+          <?php 
+            if(function_exists( 'wp_bannerize' ))
+              wp_bannerize( 'group=Banner topo (728 x 90)&no_html_wrap=1&random=1&limit=1' ); 
+          ?>
+        </figure><!-- publicidade -->
       </div><!-- //row -->
     </section><!-- //header -->
 
@@ -145,10 +163,10 @@
       <div class="row">
         <form action="<?php bloginfo('home'); ?>/" class="small-16 columns form-search" method="get">
             <div class="small-13 medium-14 large-15 left">
-              <input type="text" placeholder="Buscar no site..." id="s">
+              <input type="text" placeholder="Buscar no site..." name="s" id="s">
             </div>
 
             <div class="small-3 medium-2 large-1 left end">
-              <button type="submit" class="postfix send-search"><span class="icon-search"></span></button>
+              <button type="submit" id="searchsubmit" class="postfix send-search"><span class="icon-search"></span></button>
             </div>
         </form><!-- //form-search -->

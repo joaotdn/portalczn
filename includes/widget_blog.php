@@ -23,9 +23,10 @@
             </div><!-- //hl -->
 
             <figure class="small-16 left show-for-medium-up mbt">
-              <a href="#">
-                <img src="media/ads6.jpg" alt="">
-              </a>
+              <?php 
+                if(function_exists( 'wp_bannerize' ))
+                  wp_bannerize( 'group=Banner lateral topo (300 x 250)&no_html_wrap=1&random=1&limit=1' ); 
+              ?>
             </figure><!-- //publicidade -->
 
           </section><!-- //Ultimas do Blog -->

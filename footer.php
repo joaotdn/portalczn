@@ -53,7 +53,35 @@
       fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script>
+     /*
+  Organiza a lista de categorias
+ */
+$('.in-list').on('click',function(e) {
+  e.preventDefault();
+  $('article','#nav-posts').removeClass('medium-8 large-8')
+  .find('.cat-thumb').removeClass('medium-16 large-16')
+  .end()
+  .find('figcaption').removeClass('medium-16 large-16').addClass('ads-in-left');
+});
 
+$('.in-grid').on('click',function(e) {
+  e.preventDefault();
+  $('article','#nav-posts').addClass('medium-8 large-8')
+  .find('.cat-thumb').addClass('medium-16 large-16')
+  .end()
+  .find('figcaption').addClass('medium-16 large-16').removeClass('ads-in-left');
+});
+    </script>
+    <?php
+      if(!is_home() && !is_page()) {
+        ?>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53cbfca91e288a23"></script>
+        <?php
+      }
+    ?>
     <?php wp_footer(); ?>
   </body>
 </html>

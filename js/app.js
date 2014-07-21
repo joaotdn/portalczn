@@ -91,3 +91,66 @@ $('.video-thumb').on('click touchstart', function() {
 $(document).on('closed.fndtn.reveal', '[data-reveal]', function () {
   $('iframe, object', '.flex-video').remove();
 });
+
+/*
+  Posts
+ */
+
+
+/*
+  Requisitar dados sobre o clima
+ */
+jQuery(document).ready(function($) {
+  $.ajax({
+  url : "http://api.wunderground.com/api/2285935769616035/geolookup/conditions/q/BR/Cajazeiras.json",
+  dataType : "jsonp",
+  success : function(parsed_json) {
+  var location = parsed_json['location']['city'];
+  var temp_c = parsed_json['current_observation']['temp_c'];
+  var feelslike_c = parsed_json['current_observation']['feelslike_c'];
+  $('.red','.weather-container').html('<i class="icon-thermometer"></i>'+temp_c);
+  $('.blue','.weather-container').html('<i class="icon-thermometer"></i>'+feelslike_c);
+  }
+  });
+});
+
+$('li > a','.weather-choose').on('click', function(e) {
+  
+  e.preventDefault();
+  var city = $(this).data('city');
+  var city_name = $(this).text();
+  $('a[data-dropdown]','.weather-container').text(city_name);
+
+  $.ajax({
+  url : "http://api.wunderground.com/api/2285935769616035/geolookup/conditions/q/BR/"+ city +".json",
+  dataType : "jsonp",
+  success : function(parsed_json) {
+  var location = parsed_json['location']['city'];
+  var temp_c = parsed_json['current_observation']['temp_c'];
+  var feelslike_c = parsed_json['current_observation']['feelslike_c'];
+  $('.red','.weather-container').html('<i class="icon-thermometer"></i>'+temp_c);
+  $('.blue','.weather-container').html('<i class="icon-thermometer"></i>'+feelslike_c);
+  }
+  });
+});
+
+/*
+  Organiza a lista de categorias
+ */
+$('.in-list').on('click',function(e) {
+  e.preventDefault();
+  $('article','#nav-posts').removeClass('medium-8 large-8')
+  .find('.cat-thumb').removeClass('medium-16 large-16')
+  .end()
+  .find('figcaption').removeClass('medium-16 large-16').addClass('ads-in-left');
+});
+
+$('.in-grid').on('click',function(e) {
+  e.preventDefault();
+  $('article','#nav-posts').addClass('medium-8 large-8')
+  .find('.cat-thumb').addClass('medium-16 large-16')
+  .end()
+  .find('figcaption').addClass('medium-16 large-16').removeClass('ads-in-left');
+});
+
+

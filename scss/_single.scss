@@ -1,0 +1,55 @@
+/*
+	Cabeçalho das postagens
+ */
+.post-header {
+	padding: rem-calc(10) 0;
+	margin-bottom: rem-calc(20);
+
+	h5 {
+		border-bottom: 1px solid #ccc;
+		padding: rem-calc(10) 0;
+	}
+
+	.fb_iframe_widget span {
+		margin-right: rem-calc(10);
+	}
+}
+
+/*
+	Conteudo das postagens
+ */
+.post-content {
+	img {
+		@extend .th;
+	}
+}
+
+.alignleft {
+	float: left;
+	margin-right: rem-calc(10);
+}
+
+.alignright {
+	float: right;
+	margin-left: rem-calc(10);
+}
+
+//Galerias de imagens
+.slideshow-wrapper {
+	margin: 0 auto;
+	margin-bottom: rem-calc(20);
+	img {
+		cursor: pointer;
+	}
+}
+
+.gallery-anchor {
+	padding: rem-calc(10);
+	bottom: 0;
+	color: $yellow;
+}
+
+//Ultimas noticias
+.last-news-single {
+
+}

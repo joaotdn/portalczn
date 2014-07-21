@@ -19,9 +19,10 @@
           </div><!-- //hl -->
 
           <figure class="small-16 columns ads text-center show-for-medium-up">
-            <a href="#">
-              <img src="media/ads2.jpg" alt="">
-            </a>
+            <?php 
+              if(function_exists( 'wp_bannerize' ))
+                wp_bannerize( 'group=Banner Destaques (728 x 90)&no_html_wrap=1&random=1&limit=1' ); 
+            ?>
           </figure><!-- //publicidade -->
           
           <div class="small-16 columns mbt">
@@ -40,9 +41,10 @@
           </div><!-- //hl -->
 
           <figure class="large-5 medium-6 columns ads show-for-medium-up mbt">
-            <a href="#">
-              <img src="media/ads3.jpg" alt="">
-            </a>
+            <?php 
+              if(function_exists( 'wp_bannerize' ))
+                wp_bannerize( 'group=Banner Policial (300 x 250)&no_html_wrap=1&random=1&limit=1' ); 
+            ?>
           </figure><!-- //publicidade -->
 
           <?php
@@ -79,9 +81,10 @@
           </div><!-- //hl -->
 
           <figure class="small-16 columns ads text-center show-for-medium-up">
-            <a href="#">
-              <img src="media/ads4.jpg" alt="">
-            </a>
+            <?php 
+              if(function_exists( 'wp_bannerize' ))
+                wp_bannerize( 'group=Banner Cajazeiras (728 x 90)&no_html_wrap=1&random=1&limit=1' ); 
+            ?>
           </figure><!-- //publicidade -->
           
           <div class="small-16 columns mbt">
@@ -129,9 +132,10 @@
           ?>
 
           <figure class="large-5 medium-6 columns ads float show-for-large-up mbt">
-            <a href="#">
-              <img src="media/ads5.jpg" alt="">
-            </a>
+            <?php 
+              if(function_exists( 'wp_bannerize' ))
+                wp_bannerize( 'group=Banner Brasil (300 x 250)&no_html_wrap=1&random=1&limit=1' ); 
+            ?>
           </figure><!-- //publicidade -->
 
         </div><!-- //the-content -->

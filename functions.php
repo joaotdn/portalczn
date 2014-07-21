@@ -13,6 +13,7 @@ if ( function_exists( 'add_image_size' ) ) {
   add_image_size( 'videos-thumb', 471, 300, true ); //imagens do box videos
   add_image_size( 'fotos-thumb', 350, 180, true ); //imagens do box fotos
   add_image_size( 'classificados-thumb', 84, 84, true ); //imagens do box classificados
+  add_image_size( 'category-thumb', 460, 240, true ); //imagens para category
 }
 
 //Listar Editorias
@@ -85,6 +86,72 @@ function echo_url_category($cat_name) {
     $category_link = get_category_link( $category_id );
     echo esc_url( $category_link );
 }
+
+//Alterar saída padrão das galerias
+add_filter('post_gallery', 'my_post_gallery', 10, 2);
+function my_post_gallery($output, $attr) {
+    global $post;
+
+    if (isset($attr['orderby'])) {
+        $attr['orderby'] = sanitize_sql_orderby($attr['orderby']);
+        if (!$attr['orderby'])
+            unset($attr['orderby']);
+    }
+
+    extract(shortcode_atts(array(
+        'order' => 'ASC',
+        'orderby' => 'menu_order ID',
+        'id' => $post->ID,
+        'itemtag' => 'dl',
+        'icontag' => 'dt',
+        'captiontag' => 'dd',
+        'columns' => 3,
+        'size' => 'thumbnail',
+        'include' => '',
+        'exclude' => ''
+    ), $attr));
+
+    $id = intval($id);
+    if ('RAND' == $order) $orderby = 'none';
+
+    if (!empty($include)) {
+        $include = preg_replace('/[^0-9,]+/', '', $include);
+        $_attachments = get_posts(array('include' => $include, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => $order, 'orderby' => $orderby));
+
+        $attachments = array();
+        foreach ($_attachments as $key => $val) {
+            $attachments[$val->ID] = $_attachments[$key];
+        }
+    }
+
+    if (empty($attachments)) return '';
+
+    // Here's your actual output, you may customize it to your need
+    $output = "<div class=\"slideshow-wrapper small-5 mbt\">\n";
+    $output .= "<span class=\"small-16 abs gallery-anchor display-block font-header text-up\"><span class=\"icon-pictures\"></span> Galeria</span>";
+    $output .= "<ul class=\"clearing-thumbs clearing-feature\" data-clearing>\n";
+
+    // Now you loop through each attachment
+    foreach ($attachments as $id => $attachment) {
+        // Fetch the thumbnail (or full image, it's up to you)
+        $img = wp_get_attachment_image_src($id, 'large');
+
+        $output .= "<li ".$i.">\n";
+        $output .= "<img src=\"{$img[0]}\" width=\"{$img[1]}\" height=\"{$img[2]}\" alt=\"\" />\n";
+        $output .= "</li>\n";
+    }
+
+    $output .= "</ul>\n";
+    $output .= "</div>\n";
+
+    return $output;
+}
+
+//Correção para contagem de comentarios
+// Disqus: Prevent from replacing comment count
+remove_filter('comments_number', 'dsq_comments_text');
+remove_filter('get_comments_number', 'dsq_comments_number');
+remove_action('loop_end', 'dsq_loop_end');
 
 /*
     Chamadas AJAX

@@ -47,6 +47,19 @@
 			padding-top: 0 !important;
 		}
 	}
+
+	/*
+		Posts
+	 */
+	.post-content {
+		.alignleft, .alignright {
+			display: none;
+		}
+		.aligncenter {
+			width: 100%;
+			float: left;
+		}
+	}
 }
 
 @media #{$medium-only} {
