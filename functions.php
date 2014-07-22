@@ -179,7 +179,7 @@ require_once ( get_stylesheet_directory() . '/post-types/blog.php' );
 require_once ( get_stylesheet_directory() . '/post-types/classificados.php' );
 
 //RÁDIOS
-require_once ( get_stylesheet_directory() . '/post-types/classificados.php' );
+require_once ( get_stylesheet_directory() . '/post-types/radios.php' );
 
 /*
     Opçoes do tema

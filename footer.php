@@ -54,33 +54,6 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    <script>
-     $('a','.post-video').on('click',function(e) {
-  e.preventDefault();
-  $('body, html').animate({scrollTop: '220px'},500);
-
-  $('.video-title').text($(this).attr('title'));
-
-  $.ajax({
-    data: {
-      action: 'CZN_request_videos_home',
-      postid: $(this).data('postid')
-    },
-    beforeSend: function() {
-      $('.ajax-loader','.last-video').show();
-      $('.video-object','.last-video').hide();
-    },
-    complete: function() {
-      $('.ajax-loader','.last-video').hide(100,function() {
-        $('.video-object','.last-video').fadeIn('fast');
-      });
-    },
-    success: function(data) {
-      $('.video-object','.last-video').html(data);
-    }
-  });
-});
-    </script>
     <?php
       if(!is_home() && !is_page()) {
         ?>
