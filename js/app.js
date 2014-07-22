@@ -153,4 +153,34 @@ $('.in-grid').on('click',function(e) {
   .find('figcaption').addClass('medium-16 large-16').removeClass('ads-in-left');
 });
 
+/*
+  Videos
+ */
+
+//requisita video na categoria videos
+$('a','.post-video').on('click',function(e) {
+  e.preventDefault();
+  $('body, html').animate({scrollTop: '220px'},500);
+
+  $('.video-title').text($(this).attr('title'));
+
+  $.ajax({
+    data: {
+      action: 'CZN_request_videos_home',
+      postid: $(this).data('postid')
+    },
+    beforeSend: function() {
+      $('.ajax-loader','.last-video').show();
+      $('.video-object','.last-video').hide();
+    },
+    complete: function() {
+      $('.ajax-loader','.last-video').hide(100,function() {
+        $('.video-object','.last-video').fadeIn('fast');
+      });
+    },
+    success: function(data) {
+      $('.video-object','.last-video').html(data);
+    }
+  });
+});
 

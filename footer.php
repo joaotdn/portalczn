@@ -55,23 +55,30 @@
     </script>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     <script>
-     /*
-  Organiza a lista de categorias
- */
-$('.in-list').on('click',function(e) {
+     $('a','.post-video').on('click',function(e) {
   e.preventDefault();
-  $('article','#nav-posts').removeClass('medium-8 large-8')
-  .find('.cat-thumb').removeClass('medium-16 large-16')
-  .end()
-  .find('figcaption').removeClass('medium-16 large-16').addClass('ads-in-left');
-});
+  $('body, html').animate({scrollTop: '220px'},500);
 
-$('.in-grid').on('click',function(e) {
-  e.preventDefault();
-  $('article','#nav-posts').addClass('medium-8 large-8')
-  .find('.cat-thumb').addClass('medium-16 large-16')
-  .end()
-  .find('figcaption').addClass('medium-16 large-16').removeClass('ads-in-left');
+  $('.video-title').text($(this).attr('title'));
+
+  $.ajax({
+    data: {
+      action: 'CZN_request_videos_home',
+      postid: $(this).data('postid')
+    },
+    beforeSend: function() {
+      $('.ajax-loader','.last-video').show();
+      $('.video-object','.last-video').hide();
+    },
+    complete: function() {
+      $('.ajax-loader','.last-video').hide(100,function() {
+        $('.video-object','.last-video').fadeIn('fast');
+      });
+    },
+    success: function(data) {
+      $('.video-object','.last-video').html(data);
+    }
+  });
 });
     </script>
     <?php

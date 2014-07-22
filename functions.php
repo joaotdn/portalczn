@@ -14,6 +14,7 @@ if ( function_exists( 'add_image_size' ) ) {
   add_image_size( 'fotos-thumb', 350, 180, true ); //imagens do box fotos
   add_image_size( 'classificados-thumb', 84, 84, true ); //imagens do box classificados
   add_image_size( 'category-thumb', 460, 240, true ); //imagens para category
+  add_image_size( 'blog-thumb', 960, 340, true ); //imagens para o blog
 }
 
 //Listar Editorias
@@ -152,6 +153,11 @@ function my_post_gallery($output, $attr) {
 remove_filter('comments_number', 'dsq_comments_text');
 remove_filter('get_comments_number', 'dsq_comments_number');
 remove_action('loop_end', 'dsq_loop_end');
+
+//Imprime linha horizontal padrao do site
+function show_hl() {
+    echo "<div class=\"small-16 left clearfix\"><div class=\"hl small-16 left\"></div></div><!-- //hl -->";
+}
 
 /*
     Chamadas AJAX

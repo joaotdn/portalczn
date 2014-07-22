@@ -25,12 +25,14 @@
                 </a>
 
                 <figcaption class="small-10 left small-ads-left ads-in-left">
+                  <small class="small-16 left mbt">Publicada em <?php the_time('d \d\e F \d\e Y') ?> - <?php the_time('G:i') ?></small><br>
                   <small class="font-header red tag"><?php get_first_tag(); ?></small>
                   <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-                  <p class="text-except show-for-medium-only"><?php get_excerpt(5); ?></p>
+                  <p class="text-except show-for-medium-up"><?php get_excerpt(5); ?></p>
                   <p><a href="<?php the_permalink(); ?>#comments" title="<?php the_title(); ?>" class="color-body font-header"><span class="icon-comment hack-icon"></span> <?php comments_number( 'Sem comentários', '1 comentário', '% comentários' ); ?></a></p>
                 </figcaption>
               </figure>
+              <?php show_hl(); ?>
             </article>
           <?php endwhile; else: ?>
             <p> <?php _e('Este post não foi encontrado.'); ?> </p>

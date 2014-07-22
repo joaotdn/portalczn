@@ -27,6 +27,18 @@ $options = array (
 array( "name" => $themename." Options",
   "type" => "title"),
 
+array( "name" => "Geral",
+  "type" => "section"),
+array( "type" => "open"),
+  
+array( "name" => "Slogan do Blog",
+  "desc" => "",
+  "id" => $shortname."_slogan",
+  "type" => "text",
+  "std" => ""),  
+
+array( "type" => "close"),
+
 array( "name" => "Widgets",
   "type" => "section"),
 array( "type" => "open"),
@@ -44,7 +56,7 @@ array( "name" => "Imagem para o link da TV Diário do Sertão",
   "type" => "upload",
   "std" => ""),
 
-array( "name" => "Link da ç",
+array( "name" => "Link da TV",
   "desc" => "Link externo da TV",
   "id" => $shortname."_tvdslink",
   "type" => "text",

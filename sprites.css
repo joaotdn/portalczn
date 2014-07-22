@@ -1,18 +1,30 @@
+.icon-jfranca-small {
+  background-image: url(images/spritesheet.png);
+  background-position: -200px -132px;
+  width: 80px;
+  height: 90px;
+}
+.icon-jfranca {
+  background-image: url(images/spritesheet.png);
+  background-position: 0px 0px;
+  width: 200px;
+  height: 224px;
+}
 .icon-logo-footer {
   background-image: url(images/spritesheet.png);
-  background-position: 0px -220px;
+  background-position: 0px -224px;
   width: 141px;
   height: 62px;
 }
 .icon-logo-small {
   background-image: url(images/spritesheet.png);
-  background-position: 0px -132px;
+  background-position: -280px -132px;
   width: 200px;
   height: 88px;
 }
 .icon-logo {
   background-image: url(images/spritesheet.png);
-  background-position: 0px 0px;
+  background-position: -200px 0px;
   width: 300px;
   height: 132px;
 }

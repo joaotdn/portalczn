@@ -95,7 +95,7 @@
             <?php
               endif;
               $videos_id = get_cat_ID( 'Videos' );
-              $videos_link = get_category_link( $category_id );
+              $videos_link = get_category_link( $videos_id );
 
               if($videos_id):
             ?>
