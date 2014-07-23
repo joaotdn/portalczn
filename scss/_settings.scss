@@ -392,9 +392,9 @@
 // $include-html-clearing-classes: $include-html-classes;
 
 // We use these to set the background colors for parts of Clearing.
- $clearing-bg: #1f3b81;
+ $clearing-bg: rgba($primary-color, 0.8);
 // $clearing-caption-bg: $clearing-bg;
- $clearing-carousel-bg: #1f3b81;
+ $clearing-carousel-bg: rgba($primary-color, 0.8);
 // $clearing-img-bg: $clearing-bg;
 
 // We use these to style the close button

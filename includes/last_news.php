@@ -15,7 +15,7 @@
               >
                 <?php
                   $exclude = get_cat_ID( 'Destaques');       
-                  query_posts('showposts=4&cat=-'.$exclude); 
+                  query_posts('showposts=4&category_name=plantao&cat=-'.$exclude); 
                   if (have_posts()): while (have_posts()) : the_post();
                 ?>
                 <li class="small-16 left">
