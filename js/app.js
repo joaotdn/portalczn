@@ -184,3 +184,28 @@ $('a','.post-video').on('click',function(e) {
   });
 });
 
+/*
+  Radios
+*/
+$('a','.list-radios').on('click',function(e) {
+  e.preventDefault();
+  var stream = $(this).data('stream'),
+      title = $(this).attr('title')
+      url = getData.urlDir,
+      myWindow = window.open("", "", "width=400, height=350, scrollbars=no, resizable=no, menubar=no, location=no, fullscreen=no, directories=no, toolbar=no, top=0, left=0", true);
+  //Contruir html    
+  var html = "<html>\n<body>\n<header>\n<title>"+title+"</title>\n<link rel=\"stylesheet\" href=\""+url+"/style.css\"></header><body class=\"radios-wrap\">";
+      html += "<section class=\"row\">";
+      html += "<div class=\"small-16 columns text-center\"><figure class=\"icon-logo-small\"></figure></div>\n<h2 class=\"text-center blue\">"+title+"</h2>";
+      html += '<div class="small-16 columns text-center"><embed type="application/x-mplayer2" ID="MediaPlayer" Name="WMPlay" src="'+ stream +'" autostart="1" showcontrols="1" showstatusbar="1" width="301" height="70" /></div>';
+      html += "</section>\n</body>\n</html>";
+
+  myWindow.document.writeln(html);  
+});
+
+/*
+  Galerias
+ */
+$('li:first','.list-gallery').addClass('clearing-featured-img');
+
+

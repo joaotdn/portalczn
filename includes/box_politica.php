@@ -13,7 +13,7 @@
               query_posts('showposts=2&category_name=politica&cat=-'.$exclude); 
               if (have_posts()): while (have_posts()) : the_post();
             ?>
-            <div class="small-16 mediudm-8 large-8 columns box-td">
+            <div class="small-16 medium-8 large-8 columns box-td">
               <figure class="small-5 medium-5 large-7 left th mbt">
                 <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                   <?php

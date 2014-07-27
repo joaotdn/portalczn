@@ -128,17 +128,18 @@ function my_post_gallery($output, $attr) {
     if (empty($attachments)) return '';
 
     // Here's your actual output, you may customize it to your need
-    $output = "<div class=\"slideshow-wrapper small-5 mbt\">\n";
+    $output = "<div class=\"slideshow-wrapper small-10 medium-8 large-5 mbt rel\">\n";
     $output .= "<span class=\"small-16 abs gallery-anchor display-block font-header text-up\"><span class=\"icon-pictures\"></span> Galeria</span>";
-    $output .= "<ul class=\"clearing-thumbs clearing-feature\" data-clearing>\n";
+    $output .= "<ul class=\"clearing-thumbs clearing-feature list-gallery\" data-clearing>\n";
 
     // Now you loop through each attachment
     foreach ($attachments as $id => $attachment) {
         // Fetch the thumbnail (or full image, it's up to you)
-        $img = wp_get_attachment_image_src($id, 'large');
+        $img = wp_get_attachment_image_src($id, 'medium');
+        $full = wp_get_attachment_image_src($id, 'full');
 
-        $output .= "<li ".$i.">\n";
-        $output .= "<img src=\"{$img[0]}\" width=\"{$img[1]}\" height=\"{$img[2]}\" alt=\"\" />\n";
+        $output .= "<li>\n";
+        $output .= "<a href=\"{$full[0]}\"><img src=\"{$img[0]}\" width=\"{$img[1]}\" height=\"{$img[2]}\" alt=\"\" /></a>\n";
         $output .= "</li>\n";
     }
 
@@ -158,6 +159,7 @@ remove_action('loop_end', 'dsq_loop_end');
 function show_hl() {
     echo "<div class=\"small-16 left clearfix\"><div class=\"hl small-16 left\"></div></div><!-- //hl -->";
 }
+
 
 /*
     Chamadas AJAX

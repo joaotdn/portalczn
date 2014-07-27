@@ -14,17 +14,7 @@
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <article class="small-16 columns post mbt">
               <figure class="small-16 left">
-                <a href="<?php the_permalink(); ?>" title="" class="display-block small-6 left th mbt cat-thumb">
-                  <?php
-                    if(has_post_thumbnail()) {
-                      the_post_thumbnail( 'category-thumb' );
-                    } else {
-                      echo '<img src="'. get_template_directory_uri() .'/images/no-thumb-category.jpg">';
-                    }
-                  ?>
-                </a>
-
-                <figcaption class="small-10 left small-ads-left ads-in-left">
+                <figcaption class="small-16 left">
                   <small class="small-16 left mbt">Publicada em <?php the_time('d \d\e F \d\e Y') ?> - <?php the_time('G:i') ?></small><br>
                   <small class="font-header red tag"><?php get_first_tag(); ?></small>
                   <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>

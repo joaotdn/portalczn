@@ -5,14 +5,14 @@
             </header>
 
             <a href="#" data-options="align:top" data-dropdown="drop" class="button small-16 left radius">Selecionar Rádio</a>
-            <ul id="drop" class="small f-dropdown" data-dropdown-content>
+            <ul id="drop" class="small f-dropdown list-radios" data-dropdown-content>
               <?php
-                $args = array( 'post_type' => 'radios', 'posts_per_page' => 5, 'orderby' => 'date' ); 
+                $args = array( 'post_type' => 'radios', 'posts_per_page' => -1, 'orderby' => 'name' ); 
                 $loop = new WP_Query( $args );
                 while ( $loop->have_posts() ) : $loop->the_post();
                 $stream = get_field('radio_stream');
               ?>
-              <li><a href="#" data-stream="<?php echo $stream; ?>"><span class="icon-sound"></span> <?php the_title(); ?></a></li>
+              <li><a href="#" data-stream="<?php echo $stream; ?>" title="<?php the_title(); ?>"><span class="icon-sound"></span> <?php the_title(); ?></a></li>
               <?php endwhile; wp_reset_query(); ?>
             </ul>
           </section>

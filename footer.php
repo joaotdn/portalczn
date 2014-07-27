@@ -62,6 +62,9 @@
         <?php
       }
     ?>
+    <script>
+      $('li:first','.list-gallery').addClass('clearing-featured-img');
+    </script>
     <?php wp_footer(); ?>
   </body>
 </html>

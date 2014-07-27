@@ -39,7 +39,7 @@
               <?php show_hl(); ?>
             </article>
           <?php endwhile; else: ?>
-            <p> <?php _e('Este post não foi encontrado.'); ?> </p>
+            <p class="small-16 columns"> <?php _e('Aguardem...'); ?> </p>
           <?php endif; ?>  
           </nav>
           
