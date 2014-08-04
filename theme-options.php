@@ -19,8 +19,7 @@ foreach ($categories as $category_list ) {
        $wp_cats[$category_list->cat_ID] = $category_list->cat_name;
 }
 
-
-array_unshift($wp_cats, "Escolher categoria"); 
+array_unshift($wp_cats, "Escolher categoria");
 
 $options = array (
  
@@ -39,6 +38,25 @@ array( "name" => "Slogan do Blog",
 
 array( "type" => "close"),
 
+array( "name" => "Mensagens comemorativas",
+  "type" => "section"),
+array( "type" => "open"),
+  
+array( "name" => "Ativar slider de mensagens",
+  "desc" => "Um slider será exibido no topo do site",
+  "id" => $shortname."_msg",
+  "type" => "select",
+  "options" => array('Sim', 'Não'),
+  "std" => ""),
+
+array( "name" => "Definir data do slider",
+  "desc" => "Data comemorativa das mensagens",
+  "id" => $shortname."_msgloop",
+  "type" => "terms",
+  "std" => ""),
+
+array( "type" => "close"),
+
 array( "name" => "Widgets",
   "type" => "section"),
 array( "type" => "open"),
@@ -50,23 +68,29 @@ array( "name" => "Ativar TV Diário do Sertão",
   "options" => array('Sim', 'Não'),
   "std" => ""),
 
-array( "name" => "Imagem para o link da TV Diário do Sertão",
+array( "name" => "Código",
+  "desc" => "Cole o código para exibir a TV no site",
+  "id" => $shortname."_htmltv",
+  "type" => "textarea",
+  "std" => ""),
+
+/* array( "name" => "Imagem para o link da TV Diário do Sertão",
   "desc" => "",
   "id" => $shortname."_tvdsimg",
   "type" => "upload",
-  "std" => ""),
+  "std" => ""), */
 
-array( "name" => "Link da TV",
+/* array( "name" => "Link da TV",
   "desc" => "Link externo da TV",
   "id" => $shortname."_tvdslink",
   "type" => "text",
-  "std" => ""), 
+  "std" => ""), */
 
-array( "name" => "Texto sobre a programação da TV Diário do Sertão",
+/* array( "name" => "Texto sobre a programação da TV Diário do Sertão",
   "desc" => "s",
   "id" => $shortname."_tvdstxt",
   "type" => "textarea",
-  "std" => ""), 
+  "std" => ""), */
 
 array( "type" => "close"),
  
@@ -224,7 +248,27 @@ case 'select':
 </div>
 <?php
 break;
+
+case 'terms':
+
+$terms = get_terms('datas','hide_empty=0&orderby=date');
+?>
+
+<div class="rm_input rm_select">
+  <label for="<?php echo $value['id']; ?>"><?php echo $value['name']; ?></label>
+  
+<select name="<?php echo $value['id']; ?>" id="<?php echo $value['id']; ?>">
+<?php foreach ($terms as $option) { ?>
+    <option <?php if (get_settings( $value['id'] ) == $option->name) { echo 'selected="selected"'; } ?>><?php echo $option->name; ?></option><?php } ?>
+</select>
+  <small><?php echo $value['desc']; ?></small><div class="clearfix"></div>
+</div>
+<?php
+break;
  
+case "checkbox":
+?>
+
 case "checkbox":
 ?>
 

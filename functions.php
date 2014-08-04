@@ -33,6 +33,10 @@ function my_scripts_method() {
     wp_deregister_script( 'jquery' );
     wp_register_script( 'jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js');
     wp_enqueue_script( 'jquery' );
+
+    wp_deregister_script( 'jquery-migrate' );
+    wp_register_script( 'jquery-migrate', '//code.jquery.com/jquery-migrate-1.2.1.min.js');
+    wp_enqueue_script( 'jquery-migrate' );
 }
 add_action('wp_enqueue_scripts', 'my_scripts_method');
 
@@ -182,6 +186,9 @@ require_once ( get_stylesheet_directory() . '/post-types/classificados.php' );
 
 //RÁDIOS
 require_once ( get_stylesheet_directory() . '/post-types/radios.php' );
+
+//MENSAGENS
+require_once ( get_stylesheet_directory() . '/post-types/mensagens.php' );
 
 /*
     Opçoes do tema

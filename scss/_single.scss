@@ -53,3 +53,16 @@
 .last-news-single {
 
 }
+
+//Formulario de contato
+.form-input {
+	input, textarea {
+		width: 100%;
+		@extend .left;
+	}
+}
+
+.wpcf7-submit {
+	@include button($radius: true);
+	float: right;
+}

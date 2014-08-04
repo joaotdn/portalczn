@@ -249,6 +249,34 @@ background-image: linear-gradient(bottom, rgba(0,0,0,.4) 0%, rgba(255,255,255,.4
 }
 
 /*
+	Slide de mensagens
+ */
+.carousel {
+	margin: 0 auto;
+}
+.list-msg {
+	li {
+		width: rem-calc(360);
+		height: rem-calc(200);
+	}
+}
+
+.next-msg, .prev-msg {
+	top: 35%;
+	padding: rem-calc(10);
+}
+
+.next-msg {
+	left: rem-calc(10);
+}
+
+.prev-msg {
+	right: rem-calc(10);
+}
+
+
+
+/*
 	Like box facebook
  */
 #fb-root {

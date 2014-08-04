@@ -8,26 +8,14 @@
               <div class="block-red abs"></div>
             </header>
 
-            <figure class="small-16 left">
+            <div class="small-16 left">
               <?php
-                $link = get_option('nt_tvdslink');
+                $link = get_option('nt_htmltv');
+                if($link != '') {
+                  echo stripslashes($link);
+                }
               ?>
-              <a href="<?php if($link) { echo $link; } else { echo '#'; } ?>" class="display-block small-8 medium-16 large-16 left mbt th click-tv" target="_blank">
-                <?php $image = get_option('nt_tvdsimg'); if($image): ?>
-                <img src="<?php echo $image; ?>" alt="">
-                <?php else: ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/tv.jpg" alt="">
-                <?php endif; ?>
-              </a>
-
-              <figcaption class="small-8 medium-16 large-16 left mbt small-ads-left">
-                <h4 class="no-mbt">
-                  <a href="<?php if($link) { echo $link; } else { echo '#'; } ?>">
-                  <?php $txt = get_option('nt_tvdstxt'); if($txt) { echo $txt; } ?>
-                  </a>
-                </h4>
-              </figcaption>
-            </figure>
+            </div>
           </section><!-- //tv diario do sertão -->
 
           <div class="small-16 left mbt hide-for-medium">

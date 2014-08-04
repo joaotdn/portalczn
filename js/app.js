@@ -15,6 +15,17 @@ $.ajaxSetup({
 });
 
 /*
+  Slide de mensagens comemorativas
+ */
+$(".carousel").jCarouselLite({
+  auto: 6000,
+  speed: 500,
+  visible: 2,
+  btnNext: '.next-msg',
+  btnPrev: '.prev-msg'
+});
+
+/*
 	Config. Slide de destaques 
 	na página principal com jquery.cycle.plugin
  */
@@ -38,6 +49,7 @@ slideshow.on( 'cycle-paused', function( e, opts ) {
 slideshow.on( 'cycle-resumed', function( e, opts, timeoutRemaining ) {
     progress.animate({ width: '100%' }, timeoutRemaining, 'linear' );
 });
+
 
 /*
 	Config. menu off-canvas (Foundation)
@@ -193,7 +205,7 @@ $('a','.list-radios').on('click',function(e) {
       title = $(this).attr('title')
       url = getData.urlDir,
       myWindow = window.open("", "", "width=400, height=350, scrollbars=no, resizable=no, menubar=no, location=no, fullscreen=no, directories=no, toolbar=no, top=0, left=0", true);
-  //Contruir html    
+  //Construir html    
   var html = "<html>\n<body>\n<header>\n<title>"+title+"</title>\n<link rel=\"stylesheet\" href=\""+url+"/style.css\"></header><body class=\"radios-wrap\">";
       html += "<section class=\"row\">";
       html += "<div class=\"small-16 columns text-center\"><figure class=\"icon-logo-small\"></figure></div>\n<h2 class=\"text-center blue\">"+title+"</h2>";

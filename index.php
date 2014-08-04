@@ -1,8 +1,12 @@
 <?php get_header(); ?>
 
         <div class="small-16 medium-16 large-12 left the-content">
-
           <?php
+            /*
+              Slide MENSAGENS
+             */
+            include_once 'includes/mensagens_slide.php';
+          
             /*
               Slide principal da categoria DESTAQUES
              */

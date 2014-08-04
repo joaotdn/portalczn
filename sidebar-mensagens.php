@@ -19,9 +19,9 @@
 
           <?php
             /*
-              Mais lidas nesta categoria
+              Mais lidas no Blog
              */
-            require_once ( get_stylesheet_directory() . '/includes/widget_popular_category.php' );
+            require_once ( get_stylesheet_directory() . '/includes/widget_related_mensagens.php' );
           ?>
 
           <div class="small-16 left mbt">

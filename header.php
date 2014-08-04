@@ -38,8 +38,9 @@
           /*
             Redes sociais
            */
-          $twitter = get_field('czn_twitter');
-          $facebook = get_field('czn_facebook');
+          $contato = get_page_by_title('Fale conosco');
+          $twitter = get_field('czn_twitter', $contato->ID);
+          $facebook = get_field('czn_facebook', $contato->ID);
         ?>
         <li><label>Seguir</label></li>
         <?php if($twitter): ?>

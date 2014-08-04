@@ -64,7 +64,7 @@
           /*
             Home SIDEBAR
            */
-          get_sidebar( 'post' );
+          get_sidebar( 'mensagens' );
         ?>
       </div><!-- //row -->
     </section><!-- //wrapper -->

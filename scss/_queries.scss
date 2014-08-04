@@ -62,6 +62,16 @@
 	}
 
 	/*
+		Slide de mensagens
+	 */
+	.list-msg {
+		li {
+			width: rem-calc(160);
+			height: rem-calc(150);
+		}
+	}
+
+	/*
 		Blog
 	 */
 	.post-blog, .blog-thumb {
@@ -131,6 +141,16 @@
 	.last-news {
 		.cycle-sentinel {
 			min-height: rem-calc(310);
+		}
+	}
+
+	/*
+		Slide de mensagens
+	 */
+	.list-msg {
+		li {
+			width: rem-calc(260);
+			height: rem-calc(180);
 		}
 	}
 
