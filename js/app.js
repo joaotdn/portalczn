@@ -220,4 +220,47 @@ $('a','.list-radios').on('click',function(e) {
  */
 $('li:first','.list-gallery').addClass('clearing-featured-img');
 
+/*
+  Botão "Mais resultados"
+ */
+function getMoreResults() {
+  var btn = $('.get-more-results');
+
+
+  btn.on('click touchstart',function() {
+    var keyword   = $(this).data('keyword'),
+        term      = $(this).data('term'),
+        category  = $(this).data('category'),
+        list = $('article','#nav-posts').length;
+
+    $.ajax({
+      data: {
+        offset: list,
+        action: 'get_more_results',
+        keyword: keyword,
+        term: term,
+        category: category
+      },
+      beforeSend: function() {
+        $('.post-loader').fadeIn('fast',function() {
+          $(btn).addClass('disabled');
+        });
+      },
+      complete: function() {
+        $('.post-loader').fadeOut('fast',function() {
+          $(btn).removeClass('disabled');
+        });
+      },
+      success: function(data) {
+        if(data !== '') {
+          $('#nav-posts').append(data);
+        } else {
+          $(btn).addClass('disabled').text('Sem resultados');
+        }
+      }
+    });
+  });
+};
+getMoreResults();
+
 

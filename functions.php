@@ -173,6 +173,9 @@ function show_hl() {
 //Requisitar videos na pagina principal
 require_once ( get_stylesheet_directory() . '/functions/home_videos.php' );
 
+//Botões "Mais resultados"
+require_once ( get_stylesheet_directory() . '/functions/mais_resultados.php' );
+
 /*
     Post Types
     ============================

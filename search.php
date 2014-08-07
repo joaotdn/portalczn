@@ -29,7 +29,14 @@
           </nav>
           
           <div class="small-16 columns">
-            <button class="small-16 left text-upp radius secondary">Mais resultados</button>
+            <div class="post-loader small-16 left text-center hide">
+              <img src="<?php echo get_template_directory_uri(); ?>/ajax-loader.gif" alt="">
+            </div>
+            <?php
+              $numposts = $wpdb->get_var("SELECT COUNT(*) FROM $wpdb->posts WHERE post_status = 'publish'");
+              if (0 < $numposts) $numposts = number_format($numposts); 
+            ?>
+            <button class="small-16 left text-upp radius secondary get-more-results" data-keyword="<?php echo get_search_query(); ?>" data-count="<?php echo $numposts; ?>">Mais resultados</button>
           </div>
         </div><!-- //the-content -->
         

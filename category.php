@@ -40,7 +40,10 @@
           </nav>
           
           <div class="small-16 columns">
-            <button class="small-16 left text-upp radius secondary">Mais resultados</button>
+            <div class="post-loader small-16 left text-center hide">
+              <img src="<?php echo get_template_directory_uri(); ?>/ajax-loader.gif" alt="">
+            </div>
+            <button class="small-16 left text-upp radius secondary get-more-results" data-category="<?php $category = get_the_category(); echo $category[0]->slug;  ?>">Mais resultados</button>
           </div>
         </div><!-- //the-content -->
         

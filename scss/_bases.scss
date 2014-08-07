@@ -146,6 +146,10 @@ ul {
 	padding: rem-calc(60) 0;
 }
 
+.post-loader {
+	@extend .ajax-loader;
+}
+
 
 /*
 	Busca

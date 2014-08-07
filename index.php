@@ -22,7 +22,7 @@
             <div class="hl small-16 left"></div>
           </div><!-- //hl -->
 
-          <figure class="small-16 columns ads text-center show-for-medium-up">
+          <figure class="small-16 columns ads text-center">
             <?php 
               if(function_exists( 'wp_bannerize' ))
                 wp_bannerize( 'group=Banner Destaques (728 x 90)&no_html_wrap=1&random=1&limit=1' ); 
@@ -44,7 +44,7 @@
             <div class="hl small-16 left"></div>
           </div><!-- //hl -->
 
-          <figure class="large-5 medium-6 columns ads show-for-medium-up mbt">
+          <figure class="large-5 medium-6 columns ads mbt">
             <?php 
               if(function_exists( 'wp_bannerize' ))
                 wp_bannerize( 'group=Banner Policial (300 x 250)&no_html_wrap=1&random=1&limit=1' ); 
@@ -84,7 +84,7 @@
             <div class="hl small-16 left"></div>
           </div><!-- //hl -->
 
-          <figure class="small-16 columns ads text-center show-for-medium-up">
+          <figure class="small-16 columns ads text-center">
             <?php 
               if(function_exists( 'wp_bannerize' ))
                 wp_bannerize( 'group=Banner Cajazeiras (728 x 90)&no_html_wrap=1&random=1&limit=1' ); 
@@ -135,7 +135,7 @@
             require_once 'includes/box_brasil.php';
           ?>
 
-          <figure class="large-5 medium-6 columns ads float show-for-large-up mbt">
+          <figure class="large-5 medium-16 medium-text-center columns ads float mbt">
             <?php 
               if(function_exists( 'wp_bannerize' ))
                 wp_bannerize( 'group=Banner Brasil (300 x 250)&no_html_wrap=1&random=1&limit=1' ); 

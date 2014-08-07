@@ -150,7 +150,7 @@
           </div>
         </figure>
 
-        <figure class="large-9 small-16 columns ads-top show-for-medium-up text-right">
+        <figure class="large-9 small-16 columns ads-top text-right">
           <?php 
             if(function_exists( 'wp_bannerize' ))
               wp_bannerize( 'group=Banner topo (728 x 90)&no_html_wrap=1&random=1&limit=1' ); 

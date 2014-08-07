@@ -6,7 +6,7 @@
         ?>
         <aside id="sidebar" class="small-16 medium-16 large-4 columns">
 
-          <figure class="small-16 left show-for-large-up mbt">
+          <figure class="small-16 left mbt">
             <?php 
               if(function_exists( 'wp_bannerize' ))
                 wp_bannerize( 'group=Banner lateral topo (300 x 250)&no_html_wrap=1&random=1&limit=1' ); 
@@ -35,7 +35,7 @@
             require_once ( get_stylesheet_directory() . '/includes/widget_tvsertao.php' );
           ?>
 
-          <figure class="medium-6 large-16 left show-for-large-up mbt">
+          <figure class="medium-6 large-16 left mbt">
             <?php 
               if(function_exists( 'wp_bannerize' ))
                 wp_bannerize( 'group=Banner Classificados (300 x 250)&no_html_wrap=1&random=1&limit=1' ); 

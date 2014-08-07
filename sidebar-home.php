@@ -35,7 +35,7 @@
             <div class="hl small-16 left"></div>
           </div><!-- //hl -->
 
-          <figure class="medium-6 large-16 left show-for-medium-up mbt">
+          <figure class="medium-6 large-16 left mbt">
             <?php 
               if(function_exists( 'wp_bannerize' ))
                 wp_bannerize( 'group=Banner Classificados (300 x 250)&no_html_wrap=1&random=1&limit=1' ); 
